@@ -51,7 +51,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-header (click)=\"backToMain()\"></app-header>\r\n<div *ngIf=\"!selectedTab.lohnessy && !selectedTab.grafoman && !selectedTab.film\" [@inOutAnimation]>\r\n  <h1>Выбирай активность</h1>\r\n  <div class=\"test__select\">\r\n    <div class=\"test__select__article\">\r\n      <div class=\"test__select__article__img test__select__article__img_lohnessy\" (click)=\"selectedTab.lohnessy = true\">\r\n        <div class=\"test__select__article__img__title\">\r\n          Loh Nessy\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"test__select__article\">\r\n      <div class=\"test__select__article__img test__select__article__img_grafoman\" (click)=\"selectedTab.grafoman = true\">\r\n        <div class=\"test__select__article__img__title\">\r\n          Графоман\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"test__select__article\">\r\n      <div class=\"test__select__article__img test__select__article__img_film\">\r\n        <div class=\"test__select__article__img__title\">\r\n          Кинозал\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"test__select__article\">\r\n      <div class=\"test__select__article__img test__select__article__img_work\">\r\n        <div class=\"test__select__article__img__title\">\r\n          В разработке\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<app-lohnessy *ngIf=\"selectedTab.lohnessy\" [@inOutAnimation]></app-lohnessy>\r\n\r\n<app-grafoman *ngIf=\"selectedTab.grafoman\" [@inOutAnimation]></app-grafoman>\r\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\r\n  <app-header (click)=\"backToMain()\"></app-header>\r\n  <div *ngIf=\"!selectedTab.lohnessy && !selectedTab.grafoman && !selectedTab.film && !selectedTab.wish\" [@inOutAnimation]>\r\n    <h1>Комнаты</h1>\r\n    <div class=\"test__select\">\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_lohnessy\" (click)=\"selectRoom('lohnessy')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Loh Nessy\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_grafoman\" (click)=\"selectRoom('grafoman')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Графоман\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_film\" (click)=\"selectRoom('film')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Кинозал\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_wish\" (click)=\"selectRoom('wish')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Счётчик желаний\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_work\">\r\n          <div class=\"test__select__article__img__title\">\r\n            В разработке\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <app-lohnessy *ngIf=\"selectedTab.lohnessy\" [@inOutAnimation]></app-lohnessy>\r\n\r\n  <app-grafoman *ngIf=\"selectedTab.grafoman\" [@inOutAnimation]></app-grafoman>\r\n\r\n  <app-film *ngIf=\"selectedTab.film\" [@inOutAnimation]></app-film>\r\n\r\n  <app-wish *ngIf=\"selectedTab.wish\" [@inOutAnimation]></app-wish>\r\n\r\n  <app-footer></app-footer>\r\n\r\n</div>\r\n\r\n\r\n<div *ngIf=\"darkSideService.darkSideOn\" class=\"main_dark\" [@inOutAnimation]>\r\n  <app-header (click)=\"backToMain()\"></app-header>\r\n  <div *ngIf=\"!selectedTab.lohnessy && !selectedTab.grafoman && !selectedTab.film && !selectedTab.wish\" [@inOutAnimation]>\r\n    <h1>Комнаты</h1>\r\n    <div class=\"test__select\">\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_lohnessy\" (click)=\"selectRoom('lohnessy')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Loh Nessy\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_grafoman\" (click)=\"selectRoom('grafoman')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Графоман\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_film\" (click)=\"selectRoom('film')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Кинозал\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_wish\" (click)=\"selectRoom('wish')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Счётчик желаний\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_work\">\r\n          <div class=\"test__select__article__img__title\">\r\n            В разработке\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <app-lohnessy *ngIf=\"selectedTab.lohnessy\" [@inOutAnimation]></app-lohnessy>\r\n\r\n  <app-grafoman *ngIf=\"selectedTab.grafoman\" [@inOutAnimation]></app-grafoman>\r\n\r\n  <app-film *ngIf=\"selectedTab.film\" [@inOutAnimation]></app-film>\r\n\r\n  <app-wish *ngIf=\"selectedTab.wish\" [@inOutAnimation]></app-wish>\r\n\r\n  <app-footer></app-footer>\r\n\r\n</div>\r\n\r\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/film/film.component.html":
+  /*!********************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/film/film.component.html ***!
+    \********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppFilmFilmComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"film__container\" *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\n  <h1>Приятного просмотра!</h1>\n  <div class=\"film__article\" *ngFor=\"let item of filmService.film\">\n    <div class=\"film__article__img\">\n      <img [src]=\"item?.Poster\" alt=\"\">\n    </div>\n    <div class=\"film__article__title\">\n      <span>{{item?.Title}}</span>\n    </div>\n  </div>\n</div>\n\n<div class=\"film__container film__container_dark\" *ngIf=\"darkSideService.darkSideOn\" [@inOutAnimation]>\n  <h1>Приятного просмотра!</h1>\n  <div class=\"film__article\" *ngFor=\"let item of filmService.film\">\n    <div class=\"film__article__img\">\n      <img [src]=\"item?.Poster\" alt=\"\">\n    </div>\n    <div class=\"film__article__title\">\n      <span>{{item?.Title}}</span>\n    </div>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -71,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>footer works!</p>\n";
+    __webpack_exports__["default"] = "<div class=\"footer\">\n  <img src=\"../../assets/img/header.png\" alt=\"\">\n  <span class=\"footer__dark-side\" (click)=\"changeSide()\" *ngIf=\"!darkSideService.darkSideOn\">Тёмная версия</span>\n  <span class=\"footer__dark-side footer__dark-side_dark\" (click)=\"changeSide()\" *ngIf=\"darkSideService.darkSideOn\">Светлая версия</span>\n</div>\n";
     /***/
   },
 
@@ -91,7 +111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"grafoman__container\">\n  <div class=\"grafoman__article\" *ngFor=\"let article of verses\">\n    <pre>{{article.verse}}</pre>\n    <p>{{article.data}}</p>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"grafoman__container\" *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div class=\"grafoman__article\" *ngFor=\"let article of verses\">\n    <pre>{{article.verse}}</pre>\n    <p>{{article.data}}</p>\n  </div>\n</div>\n\n<div class=\"grafoman__container grafoman__container_dark\" *ngIf=\"darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div class=\"grafoman__article\" *ngFor=\"let article of verses\">\n    <pre>{{article.verse}}</pre>\n    <p>{{article.data}}</p>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -111,7 +131,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"header\">\n  <div class=\"header__menu\">\n    <img src=\"../../assets/img/house-logo.png\" alt=\"\" class=\"header__menu__img\">\n    <img src=\"../../assets/img/flower.png\" alt=\"\" class=\"header__menu__flower-img\">\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"header-mobile\">\n  <img src=\"../../assets/img/house-logo.png\" alt=\"\" class=\"header__menu__img\" *ngIf=\"!darkSideService.darkSideOn\">\n  <img src=\"../../assets/img/house-logo_dark.png\" alt=\"\" class=\"header__menu__img\" *ngIf=\"darkSideService.darkSideOn\">\n</div>\n\n<div class=\"header\">\n  <img src=\"../../assets/img/header.png\" alt=\"\">\n</div>\n";
     /***/
   },
 
@@ -131,47 +151,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"lohnessy__container\">\n  <div *ngFor=\"let img of arts\" [style.width.%]=\"randomWidth()\" class=\"lohnessy__article\">\n    <img [src]=\"img.url\" alt=\"\">\n    <p>{{img.label}}</p>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"lohnessy__container\" *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div *ngFor=\"let img of arts\" [style.width.%]=\"randomWidth()\" class=\"lohnessy__article\">\n    <div class=\"lohnessy__article__img\">\n      <img [src]=\"img.url\" alt=\"\">\n      <div class=\"lohnessy__article__border-top\"></div>\n      <div class=\"lohnessy__article__border-top-left\"></div>\n      <div class=\"lohnessy__article__border-bottom\"></div>\n      <div class=\"lohnessy__article__border-bottom-right\"></div>\n    </div>\n    <p>{{img.label}}</p>\n  </div>\n</div>\n\n<div class=\"lohnessy__container lohnessy__container_dark\" *ngIf=\"darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div *ngFor=\"let img of arts\" [style.width.%]=\"randomWidth()\" class=\"lohnessy__article\">\n    <div class=\"lohnessy__article__img\">\n      <img [src]=\"img.url\" alt=\"\">\n      <div class=\"lohnessy__article__border-top\"></div>\n      <div class=\"lohnessy__article__border-top-left\"></div>\n      <div class=\"lohnessy__article__border-bottom\"></div>\n      <div class=\"lohnessy__article__border-bottom-right\"></div>\n    </div>\n    <p>{{img.label}}</p>\n  </div>\n</div>\n\n";
     /***/
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/question/question.component.html":
-  /*!****************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/question/question.component.html ***!
-    \****************************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppQuestionQuestionComponentHtml(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "<p>question works!</p>\n";
-    /***/
-  },
-
-  /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/test/test.component.html":
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/wish/wish.component.html":
   /*!********************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/test/test.component.html ***!
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/wish/wish.component.html ***!
     \********************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppTestTestComponentHtml(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesRawLoaderDistCjsJsSrcAppWishWishComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "";
+    __webpack_exports__["default"] = "<div class=\"wish__container\" *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\n  <h1>Счётик желаний</h1>\n  <div class=\"wish__container__content\">\n    <div class=\"wish__left\">\n      <div class=\"wish__title\">\n        <span>Настя</span>\n      </div>\n      <div class=\"wish__size\">\n        <span>{{sizes.nasty}}</span>\n      </div>\n      <div class=\"wish__controls\">\n        <div (click)=\"plusSize('nasty')\">\n          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 496 496\" style=\"enable-background:new 0 0 496 496; width: 30px; fill: #fcacad\" xml:space=\"preserve\"><g><g><g><path d=\"M248,0C111.033,0,0,111.033,0,248c0.154,136.903,111.097,247.846,248,248c136.967,0,248-111.033,248-248S384.967,0,248,0\n\t\t\t\tz M248,480C119.87,480,16,376.13,16,248C16.146,119.93,119.93,16.146,248,16c128.13,0,232,103.87,232,232S376.13,480,248,480z\"/>\n      <path d=\"M400,240H256V96c0-4.418-3.582-8-8-8s-8,3.582-8,8v144H96c-4.418,0-8,3.582-8,8s3.582,8,8,8h144v144c0,4.418,3.582,8,8,8\n\t\t\t\ts8-3.582,8-8V256h144c4.418,0,8-3.582,8-8S404.418,240,400,240z\"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>\n        </div>\n        <div (click)=\"minusSize('nasty')\">\n          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 496 496\" style=\"enable-background:new 0 0 496 496; width: 30px; fill: #fcacad\" xml:space=\"preserve\"><g><g><g><path d=\"M248,0C111.033,0,0,111.033,0,248c0.154,136.903,111.097,247.846,248,248c136.967,0,248-111.033,248-248S384.967,0,248,0z\n\t\t\t M248,480C119.87,480,16,376.13,16,248C16.146,119.93,119.93,16.146,248,16c128.13,0,232,103.87,232,232S376.13,480,248,480z\"/>\n      <path d=\"M400,240H96c-4.418,0-8,3.582-8,8s3.582,8,8,8h304c4.418,0,8-3.582,8-8S404.418,240,400,240z\"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>\n        </div>\n         </div>\n    </div>\n\n    <div class=\"wish__left\">\n      <div class=\"wish__title\">\n        <span>Олег</span>\n      </div>\n      <div class=\"wish__size\">\n        <span>{{sizes.oleg}}</span>\n      </div>\n      <div class=\"wish__controls\">\n        <div (click)=\"plusSize('oleg')\">\n          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 496 496\" style=\"enable-background:new 0 0 496 496; width: 30px; fill: #fcacad\" xml:space=\"preserve\"><g><g><g><path d=\"M248,0C111.033,0,0,111.033,0,248c0.154,136.903,111.097,247.846,248,248c136.967,0,248-111.033,248-248S384.967,0,248,0\n\t\t\t\tz M248,480C119.87,480,16,376.13,16,248C16.146,119.93,119.93,16.146,248,16c128.13,0,232,103.87,232,232S376.13,480,248,480z\"/>\n      <path d=\"M400,240H256V96c0-4.418-3.582-8-8-8s-8,3.582-8,8v144H96c-4.418,0-8,3.582-8,8s3.582,8,8,8h144v144c0,4.418,3.582,8,8,8\n\t\t\t\ts8-3.582,8-8V256h144c4.418,0,8-3.582,8-8S404.418,240,400,240z\"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>\n        </div>\n        <div (click)=\"minusSize('oleg')\">\n          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 496 496\" style=\"enable-background:new 0 0 496 496; width: 30px; fill: #fcacad\" xml:space=\"preserve\"><g><g><g><path d=\"M248,0C111.033,0,0,111.033,0,248c0.154,136.903,111.097,247.846,248,248c136.967,0,248-111.033,248-248S384.967,0,248,0z\n\t\t\t M248,480C119.87,480,16,376.13,16,248C16.146,119.93,119.93,16.146,248,16c128.13,0,232,103.87,232,232S376.13,480,248,480z\"/>\n      <path d=\"M400,240H96c-4.418,0-8,3.582-8,8s3.582,8,8,8h304c4.418,0,8-3.582,8-8S404.418,240,400,240z\"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"wish__container wish__container_dark\" *ngIf=\"darkSideService.darkSideOn\" [@inOutAnimation]>\n  <h1>Счётик желаний</h1>\n  <div class=\"wish__container__content\">\n    <div class=\"wish__left\">\n      <div class=\"wish__title\">\n        <span>Настя</span>\n      </div>\n      <div class=\"wish__size\">\n        <span>{{sizes.nasty}}</span>\n      </div>\n      <div class=\"wish__controls\">\n        <div (click)=\"plusSize('nasty')\">\n          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 496 496\" style=\"enable-background:new 0 0 496 496; width: 30px; fill: #ffffff\" xml:space=\"preserve\"><g><g><g><path d=\"M248,0C111.033,0,0,111.033,0,248c0.154,136.903,111.097,247.846,248,248c136.967,0,248-111.033,248-248S384.967,0,248,0\n\t\t\t\tz M248,480C119.87,480,16,376.13,16,248C16.146,119.93,119.93,16.146,248,16c128.13,0,232,103.87,232,232S376.13,480,248,480z\"/>\n      <path d=\"M400,240H256V96c0-4.418-3.582-8-8-8s-8,3.582-8,8v144H96c-4.418,0-8,3.582-8,8s3.582,8,8,8h144v144c0,4.418,3.582,8,8,8\n\t\t\t\ts8-3.582,8-8V256h144c4.418,0,8-3.582,8-8S404.418,240,400,240z\"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>\n        </div>\n        <div (click)=\"minusSize('nasty')\">\n          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 496 496\" style=\"enable-background:new 0 0 496 496; width: 30px; fill: #ffffff\" xml:space=\"preserve\"><g><g><g><path d=\"M248,0C111.033,0,0,111.033,0,248c0.154,136.903,111.097,247.846,248,248c136.967,0,248-111.033,248-248S384.967,0,248,0z\n\t\t\t M248,480C119.87,480,16,376.13,16,248C16.146,119.93,119.93,16.146,248,16c128.13,0,232,103.87,232,232S376.13,480,248,480z\"/>\n      <path d=\"M400,240H96c-4.418,0-8,3.582-8,8s3.582,8,8,8h304c4.418,0,8-3.582,8-8S404.418,240,400,240z\"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"wish__left\">\n      <div class=\"wish__title\">\n        <span>Олег</span>\n      </div>\n      <div class=\"wish__size\">\n        <span>{{sizes.oleg}}</span>\n      </div>\n      <div class=\"wish__controls\">\n        <div (click)=\"plusSize('oleg')\">\n          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 496 496\" style=\"enable-background:new 0 0 496 496; width: 30px; fill: #ffffff\" xml:space=\"preserve\"><g><g><g><path d=\"M248,0C111.033,0,0,111.033,0,248c0.154,136.903,111.097,247.846,248,248c136.967,0,248-111.033,248-248S384.967,0,248,0\n\t\t\t\tz M248,480C119.87,480,16,376.13,16,248C16.146,119.93,119.93,16.146,248,16c128.13,0,232,103.87,232,232S376.13,480,248,480z\"/>\n      <path d=\"M400,240H256V96c0-4.418-3.582-8-8-8s-8,3.582-8,8v144H96c-4.418,0-8,3.582-8,8s3.582,8,8,8h144v144c0,4.418,3.582,8,8,8\n\t\t\t\ts8-3.582,8-8V256h144c4.418,0,8-3.582,8-8S404.418,240,400,240z\"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>\n        </div>\n        <div (click)=\"minusSize('oleg')\">\n          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 496 496\" style=\"enable-background:new 0 0 496 496; width: 30px; fill: #ffffff\" xml:space=\"preserve\"><g><g><g><path d=\"M248,0C111.033,0,0,111.033,0,248c0.154,136.903,111.097,247.846,248,248c136.967,0,248-111.033,248-248S384.967,0,248,0z\n\t\t\t M248,480C119.87,480,16,376.13,16,248C16.146,119.93,119.93,16.146,248,16c128.13,0,232,103.87,232,232S376.13,480,248,480z\"/>\n      <path d=\"M400,240H96c-4.418,0-8,3.582-8,8s3.582,8,8,8h304c4.418,0,8-3.582,8-8S404.418,240,400,240z\"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -795,7 +795,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".test__select {\r\n\r\n}\r\nh1 {\r\n  text-align: center;\r\n  font-family: Rumpelstiltskin;\r\n  color: #ffffff;\r\n  margin-top: 80px;\r\n  font-size: 48px;\r\n  line-height: 48px;\r\n  border-top: 3px solid #fff3e3;\r\n  border-bottom: 3px solid #fff3e3;\r\n  padding: 5px 0 1px;\r\n}\r\n.test__select {\r\n  width: 70%;\r\n  margin: 50px auto 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n.test__select__article {\r\n  width: 31.5%;\r\n  margin-left: 15px;\r\n  border-radius: 3px;\r\n  padding: 10px 5px;\r\n}\r\n.test__select__article:hover .test__select__article__img {\r\n  cursor: pointer;\r\n  box-shadow: inset 0px 0px 100px 50px rgba(0,0,0,0.75);\r\n  transition: 0.3s;\r\n}\r\n.test__select__article:nth-child(3n+1) {\r\n  margin-left: 0;\r\n}\r\n.test__select__article:nth-child(n+4) {\r\n  margin-top: 45px;\r\n}\r\n.test__select__article__img {\r\n  height: 320px;\r\n  background-color: black;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-position: center;\r\n  display: flex;\r\n  align-items: center;\r\n  transition: 0.3s;\r\n}\r\n.test__select__article__img_lohnessy {\r\n  background-image: url('nasty.jpg');\r\n}\r\n.test__select__article__img_grafoman {\r\n  background-image: url('grafoman.jpg');\r\n}\r\n.test__select__article__img_film {\r\n  background-image: url('film.jpg');\r\n}\r\n.test__select__article__img_work {\r\n  background-image: url('work.jpg');\r\n}\r\n.test__select__article__img__title {\r\n  color: #ffffff;\r\n  font-size: 48px;\r\n  line-height: 36px;\r\n  font-family: madeFont;\r\n  width: 100%;\r\n  text-align: center;\r\n}\r\n@media (max-width: 640px) {\r\n  .test__select {\r\n    width: 100%;\r\n    margin-top: 30px;\r\n  }\r\n  .test__select__article {\r\n    width: 100%;\r\n    margin: 0 15px 15px;\r\n  }\r\n  .test__select__article:nth-child(3n+1) {\r\n    margin-left: 15px;\r\n  }\r\n  .test__select__article:nth-child(n+4) {\r\n    margin-top: 15px;\r\n  }\r\n  h1 {\r\n    margin-top: 40px;\r\n    font-size: 28px;\r\n    line-height: 28px;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0FBRUE7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQiw0QkFBNEI7RUFDNUIsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLDZCQUE2QjtFQUM3QixnQ0FBZ0M7RUFDaEMsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxVQUFVO0VBQ1YsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLGVBQWU7RUFDZixxREFBcUQ7RUFDckQsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsc0JBQXNCO0VBQ3RCLDRCQUE0QjtFQUM1QiwyQkFBMkI7RUFDM0IsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGtDQUFnRDtBQUNsRDtBQUNBO0VBQ0UscUNBQW1EO0FBQ3JEO0FBQ0E7RUFDRSxpQ0FBK0M7QUFDakQ7QUFDQTtFQUNFLGlDQUErQztBQUNqRDtBQUNBO0VBQ0UsY0FBYztFQUNkLGVBQWU7RUFDZixpQkFBaUI7RUFDakIscUJBQXFCO0VBQ3JCLFdBQVc7RUFDWCxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFO0lBQ0UsV0FBVztJQUNYLGdCQUFnQjtFQUNsQjtFQUNBO0lBQ0UsV0FBVztJQUNYLG1CQUFtQjtFQUNyQjtFQUNBO0lBQ0UsaUJBQWlCO0VBQ25CO0VBQ0E7SUFDRSxnQkFBZ0I7RUFDbEI7RUFDQTtJQUNFLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsaUJBQWlCO0VBQ25CO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50ZXN0X19zZWxlY3Qge1xyXG5cclxufVxyXG5oMSB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIGZvbnQtZmFtaWx5OiBSdW1wZWxzdGlsdHNraW47XHJcbiAgY29sb3I6ICNmZmZmZmY7XHJcbiAgbWFyZ2luLXRvcDogODBweDtcclxuICBmb250LXNpemU6IDQ4cHg7XHJcbiAgbGluZS1oZWlnaHQ6IDQ4cHg7XHJcbiAgYm9yZGVyLXRvcDogM3B4IHNvbGlkICNmZmYzZTM7XHJcbiAgYm9yZGVyLWJvdHRvbTogM3B4IHNvbGlkICNmZmYzZTM7XHJcbiAgcGFkZGluZzogNXB4IDAgMXB4O1xyXG59XHJcbi50ZXN0X19zZWxlY3Qge1xyXG4gIHdpZHRoOiA3MCU7XHJcbiAgbWFyZ2luOiA1MHB4IGF1dG8gMDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtd3JhcDogd3JhcDtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlIHtcclxuICB3aWR0aDogMzEuNSU7XHJcbiAgbWFyZ2luLWxlZnQ6IDE1cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xyXG4gIHBhZGRpbmc6IDEwcHggNXB4O1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGU6aG92ZXIgLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nIHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgYm94LXNoYWRvdzogaW5zZXQgMHB4IDBweCAxMDBweCA1MHB4IHJnYmEoMCwwLDAsMC43NSk7XHJcbiAgdHJhbnNpdGlvbjogMC4zcztcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlOm50aC1jaGlsZCgzbisxKSB7XHJcbiAgbWFyZ2luLWxlZnQ6IDA7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZTpudGgtY2hpbGQobis0KSB7XHJcbiAgbWFyZ2luLXRvcDogNDVweDtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWcge1xyXG4gIGhlaWdodDogMzIwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XHJcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgdHJhbnNpdGlvbjogMC4zcztcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWdfbG9obmVzc3kge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL2ltZy9uYXN0eS5qcGcnKTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWdfZ3JhZm9tYW4ge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL2ltZy9ncmFmb21hbi5qcGcnKTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWdfZmlsbSB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi9hc3NldHMvaW1nL2ZpbG0uanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX3dvcmsge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL2ltZy93b3JrLmpwZycpO1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGVfX2ltZ19fdGl0bGUge1xyXG4gIGNvbG9yOiAjZmZmZmZmO1xyXG4gIGZvbnQtc2l6ZTogNDhweDtcclxuICBsaW5lLWhlaWdodDogMzZweDtcclxuICBmb250LWZhbWlseTogbWFkZUZvbnQ7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2NDBweCkge1xyXG4gIC50ZXN0X19zZWxlY3Qge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIH1cclxuICAudGVzdF9fc2VsZWN0X19hcnRpY2xlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWFyZ2luOiAwIDE1cHggMTVweDtcclxuICB9XHJcbiAgLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZTpudGgtY2hpbGQoM24rMSkge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDE1cHg7XHJcbiAgfVxyXG4gIC50ZXN0X19zZWxlY3RfX2FydGljbGU6bnRoLWNoaWxkKG4rNCkge1xyXG4gICAgbWFyZ2luLXRvcDogMTVweDtcclxuICB9XHJcbiAgaDEge1xyXG4gICAgbWFyZ2luLXRvcDogNDBweDtcclxuICAgIGZvbnQtc2l6ZTogMjhweDtcclxuICAgIGxpbmUtaGVpZ2h0OiAyOHB4O1xyXG4gIH1cclxufVxyXG4iXX0= */";
+    __webpack_exports__["default"] = "h1 {\r\n  text-align: center;\r\n  font-family: Rumpelstiltskin;\r\n  color: #fcacad;\r\n  margin: 20px 15px 0;\r\n  font-size: 48px;\r\n  line-height: 48px;\r\n  background-color: #ffe4e1;\r\n  padding: 5px;\r\n}\r\n.test__select {\r\n  width: 70%;\r\n  margin: 50px auto 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n.test__select__article {\r\n  width: 31.5%;\r\n  margin-left: 15px;\r\n  border-radius: 3px;\r\n  border: 10px solid #ffe4e1;\r\n}\r\n.test__select__article__img {\r\n  box-shadow: inset 0px 0px 150px 40px rgba(0, 0, 0, 0.5);\r\n}\r\n.test__select__article:nth-child(3n+1) {\r\n  margin-left: 0;\r\n}\r\n.test__select__article:nth-child(n+4) {\r\n  margin-top: 45px;\r\n}\r\n.test__select__article__img {\r\n  height: 320px;\r\n  background-color: black;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-position: center;\r\n  display: flex;\r\n  align-items: center;\r\n  transition: 0.3s;\r\n}\r\n.test__select__article__img_lohnessy {\r\n  background-image: url('nasty.jpg');\r\n}\r\n.test__select__article__img_grafoman {\r\n  background-image: url('grafoman.jpg');\r\n}\r\n.test__select__article__img_film {\r\n  background-image: url('film.jpg');\r\n}\r\n.test__select__article__img_wish {\r\n  background-image: url('wish.jpg');\r\n}\r\n.test__select__article__img_work {\r\n  background-image: url('work.jpg');\r\n}\r\n.test__select__article__img__title {\r\n  color: #ffffff;\r\n  font-size: 48px;\r\n  line-height: 36px;\r\n  font-family: madeFont;\r\n  width: 100%;\r\n  text-align: center;\r\n}\r\n.main_dark {\r\n  background-color: #000000;\r\n}\r\n.main_dark h1 {\r\n  background-color: #ffffff;\r\n  color: #000000;\r\n}\r\n.main_dark .test__select__article {\r\n  border-color: #ffffff;\r\n}\r\n@media (max-width: 640px) {\r\n  .test__select {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n  }\r\n  .test__select__article {\r\n    width: 100%;\r\n    margin: 0 15px 30px;\r\n  }\r\n  .test__select__article:nth-child(3n+1) {\r\n    margin-left: 15px;\r\n  }\r\n  .test__select__article:nth-child(n+4) {\r\n    margin-top: 15px;\r\n  }\r\n  h1 {\r\n    font-family: diamondFont;\r\n    margin-top: 40px;\r\n    font-size: 28px;\r\n    line-height: 28px;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsNEJBQTRCO0VBQzVCLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQix5QkFBeUI7RUFDekIsWUFBWTtBQUNkO0FBQ0E7RUFDRSxVQUFVO0VBQ1YsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQiwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLHVEQUF1RDtBQUN6RDtBQUNBO0VBQ0UsY0FBYztBQUNoQjtBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLHNCQUFzQjtFQUN0Qiw0QkFBNEI7RUFDNUIsMkJBQTJCO0VBQzNCLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxrQ0FBZ0Q7QUFDbEQ7QUFDQTtFQUNFLHFDQUFtRDtBQUNyRDtBQUNBO0VBQ0UsaUNBQStDO0FBQ2pEO0FBQ0E7RUFDRSxpQ0FBK0M7QUFDakQ7QUFDQTtFQUNFLGlDQUErQztBQUNqRDtBQUNBO0VBQ0UsY0FBYztFQUNkLGVBQWU7RUFDZixpQkFBaUI7RUFDakIscUJBQXFCO0VBQ3JCLFdBQVc7RUFDWCxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7QUFDaEI7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0U7SUFDRSxXQUFXO0lBQ1gsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRSxXQUFXO0lBQ1gsbUJBQW1CO0VBQ3JCO0VBQ0E7SUFDRSxpQkFBaUI7RUFDbkI7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjtFQUNBO0lBQ0Usd0JBQXdCO0lBQ3hCLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsaUJBQWlCO0VBQ25CO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgxIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZm9udC1mYW1pbHk6IFJ1bXBlbHN0aWx0c2tpbjtcclxuICBjb2xvcjogI2ZjYWNhZDtcclxuICBtYXJnaW46IDIwcHggMTVweCAwO1xyXG4gIGZvbnQtc2l6ZTogNDhweDtcclxuICBsaW5lLWhlaWdodDogNDhweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZlNGUxO1xyXG4gIHBhZGRpbmc6IDVweDtcclxufVxyXG4udGVzdF9fc2VsZWN0IHtcclxuICB3aWR0aDogNzAlO1xyXG4gIG1hcmdpbjogNTBweCBhdXRvIDA7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LXdyYXA6IHdyYXA7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZSB7XHJcbiAgd2lkdGg6IDMxLjUlO1xyXG4gIG1hcmdpbi1sZWZ0OiAxNXB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDNweDtcclxuICBib3JkZXI6IDEwcHggc29saWQgI2ZmZTRlMTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWcge1xyXG4gIGJveC1zaGFkb3c6IGluc2V0IDBweCAwcHggMTUwcHggNDBweCByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZTpudGgtY2hpbGQoM24rMSkge1xyXG4gIG1hcmdpbi1sZWZ0OiAwO1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGU6bnRoLWNoaWxkKG4rNCkge1xyXG4gIG1hcmdpbi10b3A6IDQ1cHg7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nIHtcclxuICBoZWlnaHQ6IDMyMHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIHRyYW5zaXRpb246IDAuM3M7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2xvaG5lc3N5IHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvbmFzdHkuanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2dyYWZvbWFuIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvZ3JhZm9tYW4uanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2ZpbG0ge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL2ltZy9maWxtLmpwZycpO1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGVfX2ltZ193aXNoIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvd2lzaC5qcGcnKTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWdfd29yayB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi9hc3NldHMvaW1nL3dvcmsuanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX190aXRsZSB7XHJcbiAgY29sb3I6ICNmZmZmZmY7XHJcbiAgZm9udC1zaXplOiA0OHB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAzNnB4O1xyXG4gIGZvbnQtZmFtaWx5OiBtYWRlRm9udDtcclxuICB3aWR0aDogMTAwJTtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLm1haW5fZGFyayB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDAwMDtcclxufVxyXG4ubWFpbl9kYXJrIGgxIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xyXG4gIGNvbG9yOiAjMDAwMDAwO1xyXG59XHJcbi5tYWluX2RhcmsgLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZSB7XHJcbiAgYm9yZGVyLWNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2NDBweCkge1xyXG4gIC50ZXN0X19zZWxlY3Qge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gIH1cclxuICAudGVzdF9fc2VsZWN0X19hcnRpY2xlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWFyZ2luOiAwIDE1cHggMzBweDtcclxuICB9XHJcbiAgLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZTpudGgtY2hpbGQoM24rMSkge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDE1cHg7XHJcbiAgfVxyXG4gIC50ZXN0X19zZWxlY3RfX2FydGljbGU6bnRoLWNoaWxkKG4rNCkge1xyXG4gICAgbWFyZ2luLXRvcDogMTVweDtcclxuICB9XHJcbiAgaDEge1xyXG4gICAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gICAgbWFyZ2luLXRvcDogNDBweDtcclxuICAgIGZvbnQtc2l6ZTogMjhweDtcclxuICAgIGxpbmUtaGVpZ2h0OiAyOHB4O1xyXG4gIH1cclxufVxyXG4iXX0= */";
     /***/
   },
 
@@ -836,16 +836,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/animations */
     "./node_modules/@angular/animations/fesm2015/animations.js");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./dark-side.service */
+    "./src/app/dark-side.service.ts");
 
     var AppComponent = /*#__PURE__*/function () {
-      function AppComponent() {
+      function AppComponent(darkSideService) {
         _classCallCheck(this, AppComponent);
 
+        this.darkSideService = darkSideService;
         this.title = 'surprise';
         this.selectedTab = {
           lohnessy: false,
           grafoman: false,
-          film: false
+          film: false,
+          wish: false
         };
       }
 
@@ -855,11 +863,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.selectedTab.lohnessy = false;
           this.selectedTab.grafoman = false;
           this.selectedTab.film = false;
+          this.selectedTab.wish = false;
+          setTimeout(function () {
+            window.scrollTo(0, 0);
+          }, 100);
+        }
+      }, {
+        key: "selectRoom",
+        value: function selectRoom(roomName) {
+          this.selectedTab[roomName] = true;
+          setTimeout(function () {
+            window.scrollTo(0, 0);
+          }, 100);
         }
       }]);
 
       return AppComponent;
     }();
+
+    AppComponent.ctorParameters = function () {
+      return [{
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_3__["DarkSideService"]
+      }];
+    };
 
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-root',
@@ -934,50 +960,295 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _question_question_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! ./question/question.component */
-    "./src/app/question/question.component.ts");
-    /* harmony import */
-
-
-    var _header_header_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _header_header_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./header/header.component */
     "./src/app/header/header.component.ts");
     /* harmony import */
 
 
-    var _test_test_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-    /*! ./test/test.component */
-    "./src/app/test/test.component.ts");
-    /* harmony import */
-
-
-    var _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./footer/footer.component */
     "./src/app/footer/footer.component.ts");
     /* harmony import */
 
 
-    var _lohnessy_lohnessy_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _lohnessy_lohnessy_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./lohnessy/lohnessy.component */
     "./src/app/lohnessy/lohnessy.component.ts");
     /* harmony import */
 
 
-    var _grafoman_grafoman_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _grafoman_grafoman_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./grafoman/grafoman.component */
     "./src/app/grafoman/grafoman.component.ts");
+    /* harmony import */
+
+
+    var _film_film_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./film/film.component */
+    "./src/app/film/film.component.ts");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _wish_wish_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./wish/wish.component */
+    "./src/app/wish/wish.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _question_question_component__WEBPACK_IMPORTED_MODULE_5__["QuestionComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_6__["HeaderComponent"], _test_test_component__WEBPACK_IMPORTED_MODULE_7__["TestComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__["FooterComponent"], _lohnessy_lohnessy_component__WEBPACK_IMPORTED_MODULE_9__["LohnessyComponent"], _grafoman_grafoman_component__WEBPACK_IMPORTED_MODULE_10__["GrafomanComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _lohnessy_lohnessy_component__WEBPACK_IMPORTED_MODULE_7__["LohnessyComponent"], _grafoman_grafoman_component__WEBPACK_IMPORTED_MODULE_8__["GrafomanComponent"], _film_film_component__WEBPACK_IMPORTED_MODULE_9__["FilmComponent"], _wish_wish_component__WEBPACK_IMPORTED_MODULE_11__["WishComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/dark-side.service.ts":
+  /*!**************************************!*\
+    !*** ./src/app/dark-side.service.ts ***!
+    \**************************************/
+
+  /*! exports provided: DarkSideService */
+
+  /***/
+  function srcAppDarkSideServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DarkSideService", function () {
+      return DarkSideService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var DarkSideService = function DarkSideService() {
+      _classCallCheck(this, DarkSideService);
+
+      this.darkSideOn = false;
+    };
+
+    DarkSideService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], DarkSideService);
+    /***/
+  },
+
+  /***/
+  "./src/app/film/film.component.css":
+  /*!*****************************************!*\
+    !*** ./src/app/film/film.component.css ***!
+    \*****************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppFilmFilmComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".film__container {\r\n  margin-left: 15px;\r\n  margin-right: 15px;\r\n}\r\n.film__container h1 {\r\n  font-family: diamondFont;\r\n  font-size: 28px;\r\n  line-height: 28px;\r\n  color: #fcacad;\r\n  margin: 40px 0 30px;\r\n  background-color: #ffe4e1;\r\n  padding: 5px;\r\n  text-align: center;\r\n}\r\n.film__article__img img {\r\n  width: 100%;\r\n}\r\n.film__article__title {\r\n  width: 100%;\r\n  text-align: center;\r\n  font-size: 36px;\r\n  font-family: diamondFont;\r\n  padding-bottom: 5px;\r\n  border-bottom: 10px solid #ffe4e1;\r\n  color: #fcacad;\r\n}\r\n.film__article {\r\n  margin-bottom: 50px;\r\n}\r\n.film__container_dark h1 {\r\n  color: #000000;\r\n  background-color: #ffffff;\r\n}\r\n.film__container_dark .film__article__title {\r\n  border-color: #ffffff;\r\n  color: #ffffff;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZmlsbS9maWxtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBaUI7RUFDakIsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSx3QkFBd0I7RUFDeEIsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsbUJBQW1CO0VBQ25CLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxXQUFXO0FBQ2I7QUFDQTtFQUNFLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLHdCQUF3QjtFQUN4QixtQkFBbUI7RUFDbkIsaUNBQWlDO0VBQ2pDLGNBQWM7QUFDaEI7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjtBQUVBO0VBQ0UsY0FBYztFQUNkLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9maWxtL2ZpbG0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5maWxtX19jb250YWluZXIge1xyXG4gIG1hcmdpbi1sZWZ0OiAxNXB4O1xyXG4gIG1hcmdpbi1yaWdodDogMTVweDtcclxufVxyXG4uZmlsbV9fY29udGFpbmVyIGgxIHtcclxuICBmb250LWZhbWlseTogZGlhbW9uZEZvbnQ7XHJcbiAgZm9udC1zaXplOiAyOHB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAyOHB4O1xyXG4gIGNvbG9yOiAjZmNhY2FkO1xyXG4gIG1hcmdpbjogNDBweCAwIDMwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZTRlMTtcclxuICBwYWRkaW5nOiA1cHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbi5maWxtX19hcnRpY2xlX19pbWcgaW1nIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG4uZmlsbV9fYXJ0aWNsZV9fdGl0bGUge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBmb250LXNpemU6IDM2cHg7XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIHBhZGRpbmctYm90dG9tOiA1cHg7XHJcbiAgYm9yZGVyLWJvdHRvbTogMTBweCBzb2xpZCAjZmZlNGUxO1xyXG4gIGNvbG9yOiAjZmNhY2FkO1xyXG59XHJcbi5maWxtX19hcnRpY2xlIHtcclxuICBtYXJnaW4tYm90dG9tOiA1MHB4O1xyXG59XHJcblxyXG4uZmlsbV9fY29udGFpbmVyX2RhcmsgaDEge1xyXG4gIGNvbG9yOiAjMDAwMDAwO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XHJcbn1cclxuLmZpbG1fX2NvbnRhaW5lcl9kYXJrIC5maWxtX19hcnRpY2xlX190aXRsZSB7XHJcbiAgYm9yZGVyLWNvbG9yOiAjZmZmZmZmO1xyXG4gIGNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbiJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/film/film.component.ts":
+  /*!****************************************!*\
+    !*** ./src/app/film/film.component.ts ***!
+    \****************************************/
+
+  /*! exports provided: FilmComponent */
+
+  /***/
+  function srcAppFilmFilmComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "FilmComponent", function () {
+      return FilmComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _films_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../films.service */
+    "./src/app/films.service.ts");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../dark-side.service */
+    "./src/app/dark-side.service.ts");
+    /* harmony import */
+
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js");
+
+    var FilmComponent = /*#__PURE__*/function () {
+      function FilmComponent(filmService, darkSideService) {
+        _classCallCheck(this, FilmComponent);
+
+        this.filmService = filmService;
+        this.darkSideService = darkSideService;
+      }
+
+      _createClass(FilmComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return FilmComponent;
+    }();
+
+    FilmComponent.ctorParameters = function () {
+      return [{
+        type: _films_service__WEBPACK_IMPORTED_MODULE_2__["FilmsService"]
+      }, {
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_3__["DarkSideService"]
+      }];
+    };
+
+    FilmComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-film',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./film.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/film/film.component.html"))["default"],
+      animations: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('inOutAnimation', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        opacity: 0
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.3s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        opacity: 1
+      }))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        opacity: 1
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.3s ease-in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        opacity: 0
+      }))])])],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./film.component.css */
+      "./src/app/film/film.component.css"))["default"]]
+    })], FilmComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/films.service.ts":
+  /*!**********************************!*\
+    !*** ./src/app/films.service.ts ***!
+    \**********************************/
+
+  /*! exports provided: FilmsService */
+
+  /***/
+  function srcAppFilmsServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "FilmsService", function () {
+      return FilmsService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var FilmsService = /*#__PURE__*/function () {
+      function FilmsService(http) {
+        var _this = this;
+
+        _classCallCheck(this, FilmsService);
+
+        this.http = http;
+        this.film = [];
+        this.filmsId = ['tt0468569', 'tt1375666', 'tt0109830', 'tt0120689', 'tt0120689', 'tt0816692', 'tt1853728', 'tt0910970', 'tt4154756', 'tt4633694', 'tt2380307', 'tt0361748', 'tt0180093', 'tt0457430', 'tt0469494', 'tt0434409', 'tt1130884', 'tt2096673', 'tt1291584', 'tt3170832', 'tt1205489', 'tt3011894', 'tt0978762', 'tt2267998', 'tt2119532', 'tt1950186', 'tt0405159', 'tt3315342', 'tt4016934', 'tt1895587', 'tt8613070', 'tt0381681', 'tt4430212', 'tt1454029', 'tt4857264', 'tt6751668', 'tt8579674', 'tt0993846', 'tt1392190', 'tt8946378', 'tt8367814', 'tt7131622', 'tt5606664'];
+
+        for (var i = 0; i < 5; i++) {
+          var film = this.randomNumber(0, this.filmsId.length - 1);
+          var url = "http://www.omdbapi.com/?apikey=5dcc54b1&i=".concat(this.filmsId[film]);
+          this.http.get(url).subscribe(function (item) {
+            _this.film.push(item);
+          });
+        }
+      }
+
+      _createClass(FilmsService, [{
+        key: "randomNumber",
+        value: function randomNumber(min, max) {
+          var rand = min - 0.5 + Math.random() * (max - min + 1);
+          return Math.round(rand);
+        }
+      }]);
+
+      return FilmsService;
+    }();
+
+    FilmsService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    FilmsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], FilmsService);
     /***/
   },
 
@@ -997,7 +1268,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyJ9 */";
+    __webpack_exports__["default"] = ".footer {\r\n  margin-top: 20px;\r\n  padding-bottom: 20px;\r\n  display: flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n}\r\n.footer img {\r\n  width: 100%;\r\n}\r\n.footer__dark-side {\r\n  margin-top: 20px;\r\n  font-family: diamondFont;\r\n  background-color: #ffe4e1;\r\n  color: #fcacad;\r\n  padding: 5px 10px;\r\n}\r\n.footer__dark-side_dark {\r\n  background-color: #ffffff;\r\n  color: #000000;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLG9CQUFvQjtFQUNwQixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHNCQUFzQjtBQUN4QjtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsd0JBQXdCO0VBQ3hCLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2QsaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb290ZXIge1xyXG4gIG1hcmdpbi10b3A6IDIwcHg7XHJcbiAgcGFkZGluZy1ib3R0b206IDIwcHg7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbn1cclxuLmZvb3RlciBpbWcge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcbi5mb290ZXJfX2Rhcmstc2lkZSB7XHJcbiAgbWFyZ2luLXRvcDogMjBweDtcclxuICBmb250LWZhbWlseTogZGlhbW9uZEZvbnQ7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZTRlMTtcclxuICBjb2xvcjogI2ZjYWNhZDtcclxuICBwYWRkaW5nOiA1cHggMTBweDtcclxufVxyXG4uZm9vdGVyX19kYXJrLXNpZGVfZGFyayB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcclxuICBjb2xvcjogIzAwMDAwMDtcclxufVxyXG4iXX0= */";
     /***/
   },
 
@@ -1032,19 +1303,38 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../dark-side.service */
+    "./src/app/dark-side.service.ts");
 
     var FooterComponent = /*#__PURE__*/function () {
-      function FooterComponent() {
+      function FooterComponent(darkSideService) {
         _classCallCheck(this, FooterComponent);
+
+        this.darkSideService = darkSideService;
       }
 
       _createClass(FooterComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "changeSide",
+        value: function changeSide() {
+          this.darkSideService.darkSideOn = !this.darkSideService.darkSideOn;
+        }
       }]);
 
       return FooterComponent;
     }();
+
+    FooterComponent.ctorParameters = function () {
+      return [{
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_2__["DarkSideService"]
+      }];
+    };
 
     FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-footer',
@@ -1074,7 +1364,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".grafoman__container {\r\n  width: 80%;\r\n  margin: 100px auto 0;\r\n}\r\n.grafoman__article {\r\n  margin-top: 40px;\r\n}\r\n.grafoman__article pre {\r\n  font-size: 14px;\r\n  white-space: pre-wrap;\r\n}\r\n.grafoman__article p {\r\n  font-size: 12px;\r\n  font-family: Rumpelstiltskin;\r\n  color: #eedac1;\r\n  background-color: rgba(154, 100, 100, 0.5);\r\n  margin-top: 5px;\r\n  padding: 2px 5px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ3JhZm9tYW4vZ3JhZm9tYW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFVBQVU7RUFDVixvQkFBb0I7QUFDdEI7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsZUFBZTtFQUNmLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZUFBZTtFQUNmLDRCQUE0QjtFQUM1QixjQUFjO0VBQ2QsMENBQTBDO0VBQzFDLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9ncmFmb21hbi9ncmFmb21hbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmdyYWZvbWFuX19jb250YWluZXIge1xyXG4gIHdpZHRoOiA4MCU7XHJcbiAgbWFyZ2luOiAxMDBweCBhdXRvIDA7XHJcbn1cclxuLmdyYWZvbWFuX19hcnRpY2xlIHtcclxuICBtYXJnaW4tdG9wOiA0MHB4O1xyXG59XHJcbi5ncmFmb21hbl9fYXJ0aWNsZSBwcmUge1xyXG4gIGZvbnQtc2l6ZTogMTRweDtcclxuICB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7XHJcbn1cclxuLmdyYWZvbWFuX19hcnRpY2xlIHAge1xyXG4gIGZvbnQtc2l6ZTogMTJweDtcclxuICBmb250LWZhbWlseTogUnVtcGVsc3RpbHRza2luO1xyXG4gIGNvbG9yOiAjZWVkYWMxO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMTU0LCAxMDAsIDEwMCwgMC41KTtcclxuICBtYXJnaW4tdG9wOiA1cHg7XHJcbiAgcGFkZGluZzogMnB4IDVweDtcclxufVxyXG4iXX0= */";
+    __webpack_exports__["default"] = ".grafoman__container {\r\n  margin: 40px 15px 0;\r\n}\r\n.grafoman__article {\r\n  margin-top: 40px;\r\n  border: 2px solid #FFE4E1;\r\n  background-color: rgba(255, 255, 255, 0.2);\r\n  padding: 10px 15px;\r\n  border-radius: 10px;\r\n  color: #643f3f;\r\n}\r\n.grafoman__article pre {\r\n  font-size: 14px;\r\n  white-space: pre-wrap;\r\n  margin: 0;\r\n}\r\n.grafoman__article p {\r\n  display: inline-block;\r\n  font-size: 12px;\r\n  font-family: diamondFont;\r\n  color: #ffffff;\r\n  background-color: #fcacad;\r\n  margin-top: 15px;\r\n  padding: 2px 5px;\r\n}\r\n.grafoman__container_dark .grafoman__article {\r\n  border-color: #ffffff;\r\n  background-color: #ffffff;\r\n  color: #000000;\r\n}\r\n.grafoman__container_dark .grafoman__article p {\r\n  background-color: #000000;\r\n  color: #ffffff;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ3JhZm9tYW4vZ3JhZm9tYW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHlCQUF5QjtFQUN6QiwwQ0FBMEM7RUFDMUMsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxlQUFlO0VBQ2YscUJBQXFCO0VBQ3JCLFNBQVM7QUFDWDtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZix3QkFBd0I7RUFDeEIsY0FBYztFQUNkLHlCQUF5QjtFQUN6QixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCO0FBRUE7RUFDRSxxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLGNBQWM7QUFDaEI7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvZ3JhZm9tYW4vZ3JhZm9tYW4uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ncmFmb21hbl9fY29udGFpbmVyIHtcclxuICBtYXJnaW46IDQwcHggMTVweCAwO1xyXG59XHJcbi5ncmFmb21hbl9fYXJ0aWNsZSB7XHJcbiAgbWFyZ2luLXRvcDogNDBweDtcclxuICBib3JkZXI6IDJweCBzb2xpZCAjRkZFNEUxO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4yKTtcclxuICBwYWRkaW5nOiAxMHB4IDE1cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICBjb2xvcjogIzY0M2YzZjtcclxufVxyXG4uZ3JhZm9tYW5fX2FydGljbGUgcHJlIHtcclxuICBmb250LXNpemU6IDE0cHg7XHJcbiAgd2hpdGUtc3BhY2U6IHByZS13cmFwO1xyXG4gIG1hcmdpbjogMDtcclxufVxyXG4uZ3JhZm9tYW5fX2FydGljbGUgcCB7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGZvbnQtc2l6ZTogMTJweDtcclxuICBmb250LWZhbWlseTogZGlhbW9uZEZvbnQ7XHJcbiAgY29sb3I6ICNmZmZmZmY7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZjYWNhZDtcclxuICBtYXJnaW4tdG9wOiAxNXB4O1xyXG4gIHBhZGRpbmc6IDJweCA1cHg7XHJcbn1cclxuXHJcbi5ncmFmb21hbl9fY29udGFpbmVyX2RhcmsgLmdyYWZvbWFuX19hcnRpY2xlIHtcclxuICBib3JkZXItY29sb3I6ICNmZmZmZmY7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcclxuICBjb2xvcjogIzAwMDAwMDtcclxufVxyXG4uZ3JhZm9tYW5fX2NvbnRhaW5lcl9kYXJrIC5ncmFmb21hbl9fYXJ0aWNsZSBwIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwO1xyXG4gIGNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbiJdfQ== */";
     /***/
   },
 
@@ -1109,11 +1399,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../dark-side.service */
+    "./src/app/dark-side.service.ts");
+    /* harmony import */
+
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js");
 
     var GrafomanComponent = /*#__PURE__*/function () {
-      function GrafomanComponent() {
+      function GrafomanComponent(darkSideService) {
         _classCallCheck(this, GrafomanComponent);
 
+        this.darkSideService = darkSideService;
         this.verses = [{
           verse: 'Измены, похоть и разврат -\n' + 'Одним этим все вокруг горят.\n' + 'Великие слова давно уж потеряли вес,\n' + 'От них остался на груди лишь крест.\n' + '\n' + 'Книжка в детстве про это умолчала,\n' + 'Сказки нет, осталась тьма.\n' + 'Буду ждать скорейшего финала,\n' + 'Смотря на небо с высокого холма.',
           data: '12.05.2020'
@@ -1146,11 +1449,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       return GrafomanComponent;
     }();
 
+    GrafomanComponent.ctorParameters = function () {
+      return [{
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_2__["DarkSideService"]
+      }];
+    };
+
     GrafomanComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-grafoman',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./grafoman.component.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/grafoman/grafoman.component.html"))["default"],
+      animations: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["trigger"])('inOutAnimation', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 0
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["animate"])('0.3s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 1
+      }))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["transition"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 1
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["animate"])('0.3s ease-in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 0
+      }))])])],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./grafoman.component.css */
       "./src/app/grafoman/grafoman.component.css"))["default"]]
@@ -1174,7 +1492,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".header {\r\n  background-color: #fff3e3;\r\n  padding: 15px 0;\r\n  width: 100%;\r\n  margin: 25px auto 0;\r\n  box-shadow: 0px 10px 35px -30px rgba(0,0,0,0.25);\r\n  box-sizing: border-box;\r\n}\r\n.header__menu {\r\n  margin: 0 auto;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  position: relative;\r\n}\r\n.header__menu h1 {\r\n  font-size: 48px;\r\n  line-height: 48px;\r\n  margin: 0 0 0 60px;\r\n  font-family: madeFont;\r\n  color: #c5a08a;\r\n}\r\n.header__menu__img {\r\n  width: 100px;\r\n}\r\n.header__menu__flower-img {\r\n  width: 80px;\r\n  position: absolute;\r\n  bottom: 0;\r\n  bottom: -40px;\r\n  right: 20%;\r\n}\r\n@media (max-width: 640px) {\r\n  .header {\r\n    width: 110px;\r\n    border-radius: 1000px;\r\n  }\r\n  .header__menu {\r\n    width: auto;\r\n    margin: 0px 10px;\r\n  }\r\n  .header__menu__link {\r\n    font-size: 13px;\r\n  }\r\n  .header__menu__img {\r\n    width: 70px;\r\n  }\r\n  .header__menu__flower-img {\r\n    right: 8vw;\r\n    width: 35px;\r\n    bottom: -33px;\r\n  }\r\n  .header__menu h1 {\r\n    font-size: 40px;\r\n    line-height: 40px;\r\n    margin: 15px 0 0 25px;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UseUJBQXlCO0VBQ3pCLGVBQWU7RUFDZixXQUFXO0VBQ1gsbUJBQW1CO0VBQ25CLGdEQUFnRDtFQUNoRCxzQkFBc0I7QUFDeEI7QUFDQTtFQUNFLGNBQWM7RUFDZCxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7QUFDQTtFQUNFLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsU0FBUztFQUNULGFBQWE7RUFDYixVQUFVO0FBQ1o7QUFDQTtFQUNFO0lBQ0UsWUFBWTtJQUNaLHFCQUFxQjtFQUN2QjtFQUNBO0lBQ0UsV0FBVztJQUNYLGdCQUFnQjtFQUNsQjtFQUNBO0lBQ0UsZUFBZTtFQUNqQjtFQUNBO0lBQ0UsV0FBVztFQUNiO0VBQ0E7SUFDRSxVQUFVO0lBQ1YsV0FBVztJQUNYLGFBQWE7RUFDZjtFQUNBO0lBQ0UsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixxQkFBcUI7RUFDdkI7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmYzZTM7XHJcbiAgcGFkZGluZzogMTVweCAwO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIG1hcmdpbjogMjVweCBhdXRvIDA7XHJcbiAgYm94LXNoYWRvdzogMHB4IDEwcHggMzVweCAtMzBweCByZ2JhKDAsMCwwLDAuMjUpO1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbn1cclxuLmhlYWRlcl9fbWVudSB7XHJcbiAgbWFyZ2luOiAwIGF1dG87XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxufVxyXG4uaGVhZGVyX19tZW51IGgxIHtcclxuICBmb250LXNpemU6IDQ4cHg7XHJcbiAgbGluZS1oZWlnaHQ6IDQ4cHg7XHJcbiAgbWFyZ2luOiAwIDAgMCA2MHB4O1xyXG4gIGZvbnQtZmFtaWx5OiBtYWRlRm9udDtcclxuICBjb2xvcjogI2M1YTA4YTtcclxufVxyXG4uaGVhZGVyX19tZW51X19pbWcge1xyXG4gIHdpZHRoOiAxMDBweDtcclxufVxyXG4uaGVhZGVyX19tZW51X19mbG93ZXItaW1nIHtcclxuICB3aWR0aDogODBweDtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgYm90dG9tOiAwO1xyXG4gIGJvdHRvbTogLTQwcHg7XHJcbiAgcmlnaHQ6IDIwJTtcclxufVxyXG5AbWVkaWEgKG1heC13aWR0aDogNjQwcHgpIHtcclxuICAuaGVhZGVyIHtcclxuICAgIHdpZHRoOiAxMTBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwMDBweDtcclxuICB9XHJcbiAgLmhlYWRlcl9fbWVudSB7XHJcbiAgICB3aWR0aDogYXV0bztcclxuICAgIG1hcmdpbjogMHB4IDEwcHg7XHJcbiAgfVxyXG4gIC5oZWFkZXJfX21lbnVfX2xpbmsge1xyXG4gICAgZm9udC1zaXplOiAxM3B4O1xyXG4gIH1cclxuICAuaGVhZGVyX19tZW51X19pbWcge1xyXG4gICAgd2lkdGg6IDcwcHg7XHJcbiAgfVxyXG4gIC5oZWFkZXJfX21lbnVfX2Zsb3dlci1pbWcge1xyXG4gICAgcmlnaHQ6IDh2dztcclxuICAgIHdpZHRoOiAzNXB4O1xyXG4gICAgYm90dG9tOiAtMzNweDtcclxuICB9XHJcbiAgLmhlYWRlcl9fbWVudSBoMSB7XHJcbiAgICBmb250LXNpemU6IDQwcHg7XHJcbiAgICBsaW5lLWhlaWdodDogNDBweDtcclxuICAgIG1hcmdpbjogMTVweCAwIDAgMjVweDtcclxuICB9XHJcbn1cclxuIl19 */";
+    __webpack_exports__["default"] = ".header {\r\n\r\n}\r\n.header img {\r\n  width: 100%;\r\n  margin-top: 10px;\r\n}\r\n.header-mobile img {\r\n  z-index: 999;\r\n  width: 60px;\r\n  position: fixed;\r\n  opacity: 0.9;\r\n  bottom: 50px;\r\n  right: 10px;\r\n  box-shadow: 0px 0px 34px -5px rgba(0,0,0,0.75);\r\n  border-radius: 1000px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztBQUVBO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osV0FBVztFQUNYLGVBQWU7RUFDZixZQUFZO0VBQ1osWUFBWTtFQUNaLFdBQVc7RUFDWCw4Q0FBOEM7RUFDOUMscUJBQXFCO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlciB7XHJcblxyXG59XHJcbi5oZWFkZXIgaW1nIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG59XHJcbi5oZWFkZXItbW9iaWxlIGltZyB7XHJcbiAgei1pbmRleDogOTk5O1xyXG4gIHdpZHRoOiA2MHB4O1xyXG4gIHBvc2l0aW9uOiBmaXhlZDtcclxuICBvcGFjaXR5OiAwLjk7XHJcbiAgYm90dG9tOiA1MHB4O1xyXG4gIHJpZ2h0OiAxMHB4O1xyXG4gIGJveC1zaGFkb3c6IDBweCAwcHggMzRweCAtNXB4IHJnYmEoMCwwLDAsMC43NSk7XHJcbiAgYm9yZGVyLXJhZGl1czogMTAwMHB4O1xyXG59XHJcbiJdfQ== */";
     /***/
   },
 
@@ -1209,10 +1527,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../dark-side.service */
+    "./src/app/dark-side.service.ts");
 
     var HeaderComponent = /*#__PURE__*/function () {
-      function HeaderComponent() {
+      function HeaderComponent(darkSideService) {
         _classCallCheck(this, HeaderComponent);
+
+        this.darkSideService = darkSideService;
       }
 
       _createClass(HeaderComponent, [{
@@ -1222,6 +1548,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       return HeaderComponent;
     }();
+
+    HeaderComponent.ctorParameters = function () {
+      return [{
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_2__["DarkSideService"]
+      }];
+    };
 
     HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-header',
@@ -1251,7 +1583,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".lohnessy__container {\r\n  width: 80%;\r\n  margin: 100px auto 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.lohnessy__article img {\r\n  width: 100%;\r\n}\r\n.lohnessy__article p {\r\n  color: #eedac1;\r\n  background-color: rgba(154, 100, 100, 0.5);\r\n  font-size: 22px;\r\n  line-height: 22px;\r\n  text-align: center;\r\n  font-family: Rumpelstiltskin;\r\n  margin-top: 10px;\r\n  padding: 5px 0 3px;\r\n  margin-bottom: 45px;\r\n}\r\n@media (max-width: 640px) {\r\n  .lohnessy__container {\r\n    margin-top: 80px;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9obmVzc3kvbG9obmVzc3kuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFVBQVU7RUFDVixvQkFBb0I7RUFDcEIsYUFBYTtFQUNiLGVBQWU7RUFDZiw4QkFBOEI7RUFDOUIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxXQUFXO0FBQ2I7QUFDQTtFQUNFLGNBQWM7RUFDZCwwQ0FBMEM7RUFDMUMsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsNEJBQTRCO0VBQzVCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRTtJQUNFLGdCQUFnQjtFQUNsQjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvbG9obmVzc3kvbG9obmVzc3kuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2huZXNzeV9fY29udGFpbmVyIHtcclxuICB3aWR0aDogODAlO1xyXG4gIG1hcmdpbjogMTAwcHggYXV0byAwO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC13cmFwOiB3cmFwO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcbi5sb2huZXNzeV9fYXJ0aWNsZSBpbWcge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcbi5sb2huZXNzeV9fYXJ0aWNsZSBwIHtcclxuICBjb2xvcjogI2VlZGFjMTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDE1NCwgMTAwLCAxMDAsIDAuNSk7XHJcbiAgZm9udC1zaXplOiAyMnB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAyMnB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBmb250LWZhbWlseTogUnVtcGVsc3RpbHRza2luO1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgcGFkZGluZzogNXB4IDAgM3B4O1xyXG4gIG1hcmdpbi1ib3R0b206IDQ1cHg7XHJcbn1cclxuQG1lZGlhIChtYXgtd2lkdGg6IDY0MHB4KSB7XHJcbiAgLmxvaG5lc3N5X19jb250YWluZXIge1xyXG4gICAgbWFyZ2luLXRvcDogODBweDtcclxuICB9XHJcbn1cclxuIl19 */";
+    __webpack_exports__["default"] = ".lohnessy__container {\r\n  margin: 50px 15px 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.lohnessy__article__img {\r\n  position: relative;\r\n}\r\n.lohnessy__article img {\r\n  width: 100%;\r\n  box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.3);\r\n}\r\n.lohnessy__article p {\r\n  color: #fcacad;\r\n  background-color: rgba(255, 228, 225, 0.5);\r\n  font-size: 22px;\r\n  line-height: 22px;\r\n  text-align: center;\r\n  font-family: diamondFont;\r\n  margin-top: 10px;\r\n  padding: 5px 0;\r\n  margin-bottom: 45px;\r\n}\r\n.lohnessy__article__border-top {\r\n  height: 20px;\r\n  width: 70px;\r\n  background-color: #ffe4e1;\r\n  position: absolute;\r\n  top: -10px;\r\n}\r\n.lohnessy__article__border-top-left {\r\n  height: 70px;\r\n  width: 20px;\r\n  background-color: #ffe4e1;\r\n  position: absolute;\r\n  top: -10px;\r\n  left: -10px;\r\n}\r\n.lohnessy__article__border-bottom {\r\n  height: 20px;\r\n  width: 70px;\r\n  background-color: #ffe4e1;\r\n  position: absolute;\r\n  bottom: 0;\r\n  right: 0;\r\n}\r\n.lohnessy__article__border-bottom-right {\r\n  height: 70px;\r\n  width: 20px;\r\n  background-color: #ffe4e1;\r\n  position: absolute;\r\n  bottom: 0;\r\n  right: -10px;\r\n}\r\n.lohnessy__article:nth-child(2n) .lohnessy__article__border-top {\r\n  right: 0;\r\n}\r\n.lohnessy__article:nth-child(2n) .lohnessy__article__border-top-left {\r\n  right: -10px;\r\n  left: auto;\r\n}\r\n.lohnessy__article:nth-child(2n) .lohnessy__article__border-bottom {\r\n  left: 0;\r\n}\r\n.lohnessy__article:nth-child(2n) .lohnessy__article__border-bottom-right {\r\n  left: -10px;\r\n}\r\n.lohnessy__container_dark .lohnessy__article__border-top, .lohnessy__container_dark .lohnessy__article__border-top-left, .lohnessy__container_dark .lohnessy__article__border-bottom, .lohnessy__container_dark .lohnessy__article__border-bottom-right {\r\n  background-color: #ffffff;\r\n}\r\n.lohnessy__container_dark p {\r\n  color: #000000;\r\n  background-color: rgba(255, 255, 255, 1);\r\n}\r\n@media (max-width: 640px) {\r\n  .lohnessy__container {\r\n    margin-top: 40px;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9obmVzc3kvbG9obmVzc3kuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsZUFBZTtFQUNmLDhCQUE4QjtFQUM5QixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsV0FBVztFQUNYLDZDQUE2QztBQUMvQztBQUNBO0VBQ0UsY0FBYztFQUNkLDBDQUEwQztFQUMxQyxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQix3QkFBd0I7RUFDeEIsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxtQkFBbUI7QUFDckI7QUFDQTtFQUNFLFlBQVk7RUFDWixXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7QUFDQTtFQUNFLFlBQVk7RUFDWixXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsV0FBVztBQUNiO0FBQ0E7RUFDRSxZQUFZO0VBQ1osV0FBVztFQUNYLHlCQUF5QjtFQUN6QixrQkFBa0I7RUFDbEIsU0FBUztFQUNULFFBQVE7QUFDVjtBQUNBO0VBQ0UsWUFBWTtFQUNaLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxZQUFZO0FBQ2Q7QUFDQTtFQUNFLFFBQVE7QUFDVjtBQUNBO0VBQ0UsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBO0VBQ0UsT0FBTztBQUNUO0FBQ0E7RUFDRSxXQUFXO0FBQ2I7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0UsY0FBYztFQUNkLHdDQUF3QztBQUMxQztBQUNBO0VBQ0U7SUFDRSxnQkFBZ0I7RUFDbEI7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2xvaG5lc3N5L2xvaG5lc3N5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubG9obmVzc3lfX2NvbnRhaW5lciB7XHJcbiAgbWFyZ2luOiA1MHB4IDE1cHggMDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtd3JhcDogd3JhcDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG4ubG9obmVzc3lfX2FydGljbGVfX2ltZyB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcbi5sb2huZXNzeV9fYXJ0aWNsZSBpbWcge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJveC1zaGFkb3c6IDBweCAwcHggMjBweCAtNXB4IHJnYmEoMCwwLDAsMC4zKTtcclxufVxyXG4ubG9obmVzc3lfX2FydGljbGUgcCB7XHJcbiAgY29sb3I6ICNmY2FjYWQ7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDIyOCwgMjI1LCAwLjUpO1xyXG4gIGZvbnQtc2l6ZTogMjJweDtcclxuICBsaW5lLWhlaWdodDogMjJweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgcGFkZGluZzogNXB4IDA7XHJcbiAgbWFyZ2luLWJvdHRvbTogNDVweDtcclxufVxyXG4ubG9obmVzc3lfX2FydGljbGVfX2JvcmRlci10b3Age1xyXG4gIGhlaWdodDogMjBweDtcclxuICB3aWR0aDogNzBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZlNGUxO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IC0xMHB4O1xyXG59XHJcbi5sb2huZXNzeV9fYXJ0aWNsZV9fYm9yZGVyLXRvcC1sZWZ0IHtcclxuICBoZWlnaHQ6IDcwcHg7XHJcbiAgd2lkdGg6IDIwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZTRlMTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAtMTBweDtcclxuICBsZWZ0OiAtMTBweDtcclxufVxyXG4ubG9obmVzc3lfX2FydGljbGVfX2JvcmRlci1ib3R0b20ge1xyXG4gIGhlaWdodDogMjBweDtcclxuICB3aWR0aDogNzBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZlNGUxO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBib3R0b206IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbn1cclxuLmxvaG5lc3N5X19hcnRpY2xlX19ib3JkZXItYm90dG9tLXJpZ2h0IHtcclxuICBoZWlnaHQ6IDcwcHg7XHJcbiAgd2lkdGg6IDIwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZTRlMTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgYm90dG9tOiAwO1xyXG4gIHJpZ2h0OiAtMTBweDtcclxufVxyXG4ubG9obmVzc3lfX2FydGljbGU6bnRoLWNoaWxkKDJuKSAubG9obmVzc3lfX2FydGljbGVfX2JvcmRlci10b3Age1xyXG4gIHJpZ2h0OiAwO1xyXG59XHJcbi5sb2huZXNzeV9fYXJ0aWNsZTpudGgtY2hpbGQoMm4pIC5sb2huZXNzeV9fYXJ0aWNsZV9fYm9yZGVyLXRvcC1sZWZ0IHtcclxuICByaWdodDogLTEwcHg7XHJcbiAgbGVmdDogYXV0bztcclxufVxyXG4ubG9obmVzc3lfX2FydGljbGU6bnRoLWNoaWxkKDJuKSAubG9obmVzc3lfX2FydGljbGVfX2JvcmRlci1ib3R0b20ge1xyXG4gIGxlZnQ6IDA7XHJcbn1cclxuLmxvaG5lc3N5X19hcnRpY2xlOm50aC1jaGlsZCgybikgLmxvaG5lc3N5X19hcnRpY2xlX19ib3JkZXItYm90dG9tLXJpZ2h0IHtcclxuICBsZWZ0OiAtMTBweDtcclxufVxyXG4ubG9obmVzc3lfX2NvbnRhaW5lcl9kYXJrIC5sb2huZXNzeV9fYXJ0aWNsZV9fYm9yZGVyLXRvcCwgLmxvaG5lc3N5X19jb250YWluZXJfZGFyayAubG9obmVzc3lfX2FydGljbGVfX2JvcmRlci10b3AtbGVmdCwgLmxvaG5lc3N5X19jb250YWluZXJfZGFyayAubG9obmVzc3lfX2FydGljbGVfX2JvcmRlci1ib3R0b20sIC5sb2huZXNzeV9fY29udGFpbmVyX2RhcmsgLmxvaG5lc3N5X19hcnRpY2xlX19ib3JkZXItYm90dG9tLXJpZ2h0IHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbi5sb2huZXNzeV9fY29udGFpbmVyX2RhcmsgcCB7XHJcbiAgY29sb3I6ICMwMDAwMDA7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAxKTtcclxufVxyXG5AbWVkaWEgKG1heC13aWR0aDogNjQwcHgpIHtcclxuICAubG9obmVzc3lfX2NvbnRhaW5lciB7XHJcbiAgICBtYXJnaW4tdG9wOiA0MHB4O1xyXG4gIH1cclxufVxyXG4iXX0= */";
     /***/
   },
 
@@ -1286,11 +1618,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../dark-side.service */
+    "./src/app/dark-side.service.ts");
+    /* harmony import */
+
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js");
 
     var LohnessyComponent = /*#__PURE__*/function () {
-      function LohnessyComponent() {
+      function LohnessyComponent(darkSideService) {
         _classCallCheck(this, LohnessyComponent);
 
+        this.darkSideService = darkSideService;
         this.arts = [{
           label: 'Девочка с каре',
           url: '../../assets/img/nasty-1.jpg'
@@ -1359,11 +1704,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       return LohnessyComponent;
     }();
 
+    LohnessyComponent.ctorParameters = function () {
+      return [{
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_2__["DarkSideService"]
+      }];
+    };
+
     LohnessyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-lohnessy',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./lohnessy.component.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/lohnessy/lohnessy.component.html"))["default"],
+      animations: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["trigger"])('inOutAnimation', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 0
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["animate"])('0.3s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 1
+      }))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["transition"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 1
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["animate"])('0.3s ease-in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 0
+      }))])])],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./lohnessy.component.css */
       "./src/app/lohnessy/lohnessy.component.css"))["default"]]
@@ -1372,120 +1732,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./src/app/question/question.component.css":
-  /*!*************************************************!*\
-    !*** ./src/app/question/question.component.css ***!
-    \*************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function srcAppQuestionQuestionComponentCss(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3F1ZXN0aW9uL3F1ZXN0aW9uLmNvbXBvbmVudC5jc3MifQ== */";
-    /***/
-  },
-
-  /***/
-  "./src/app/question/question.component.ts":
-  /*!************************************************!*\
-    !*** ./src/app/question/question.component.ts ***!
-    \************************************************/
-
-  /*! exports provided: QuestionComponent */
-
-  /***/
-  function srcAppQuestionQuestionComponentTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "QuestionComponent", function () {
-      return QuestionComponent;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-
-    var QuestionComponent = /*#__PURE__*/function () {
-      function QuestionComponent() {
-        _classCallCheck(this, QuestionComponent);
-      }
-
-      _createClass(QuestionComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {}
-      }]);
-
-      return QuestionComponent;
-    }();
-
-    QuestionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-question',
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./question.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/question/question.component.html"))["default"],
-      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./question.component.css */
-      "./src/app/question/question.component.css"))["default"]]
-    })], QuestionComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/test/test.component.css":
+  "./src/app/wish/wish.component.css":
   /*!*****************************************!*\
-    !*** ./src/app/test/test.component.css ***!
+    !*** ./src/app/wish/wish.component.css ***!
     \*****************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppTestTestComponentCss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppWishWishComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Rlc3QvdGVzdC5jb21wb25lbnQuY3NzIn0= */";
+    __webpack_exports__["default"] = ".wish__container {\r\n  margin: 30px 15px 200px;\r\n}\r\n.wish__container h1 {\r\n  font-family: diamondFont;\r\n  font-size: 28px;\r\n  line-height: 28px;\r\n  color: #fcacad;\r\n  margin: 40px 0 30px;\r\n  background-color: #ffe4e1;\r\n  padding: 5px;\r\n  text-align: center;\r\n}\r\n.wish__container__content {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-left: 30px;\r\n  margin-right: 30px;\r\n}\r\n.wish__title {\r\n  font-family: diamondFont;\r\n  color: #fcacad;\r\n  font-size: 22px;\r\n  text-align: center;\r\n}\r\n.wish__size {\r\n  font-family: diamondFont;\r\n  text-align: center;\r\n  color: #fcacad;\r\n  font-weight: 800;\r\n  font-size: 24px;\r\n}\r\n.wish__controls {\r\n  display: flex;\r\n}\r\n.wish__controls div {\r\n  margin-left: 15px;\r\n}\r\n.wish__controls div:first-child {\r\n  margin-left: 0;\r\n}\r\n.wish__container_dark h1 {\r\n  color: #000000;\r\n  background-color: #ffffff;\r\n}\r\n.wish__container_dark .wish__title, .wish__container_dark .wish__size {\r\n  color: #ffffff;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2lzaC93aXNoLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekI7QUFDQTtFQUNFLHdCQUF3QjtFQUN4QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0Usd0JBQXdCO0VBQ3hCLGNBQWM7RUFDZCxlQUFlO0VBQ2Ysa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSx3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsYUFBYTtBQUNmO0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLGNBQWM7QUFDaEI7QUFDQTtFQUNFLGNBQWM7RUFDZCx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC93aXNoL3dpc2guY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi53aXNoX19jb250YWluZXIge1xyXG4gIG1hcmdpbjogMzBweCAxNXB4IDIwMHB4O1xyXG59XHJcbi53aXNoX19jb250YWluZXIgaDEge1xyXG4gIGZvbnQtZmFtaWx5OiBkaWFtb25kRm9udDtcclxuICBmb250LXNpemU6IDI4cHg7XHJcbiAgbGluZS1oZWlnaHQ6IDI4cHg7XHJcbiAgY29sb3I6ICNmY2FjYWQ7XHJcbiAgbWFyZ2luOiA0MHB4IDAgMzBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZlNGUxO1xyXG4gIHBhZGRpbmc6IDVweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLndpc2hfX2NvbnRhaW5lcl9fY29udGVudCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgbWFyZ2luLWxlZnQ6IDMwcHg7XHJcbiAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xyXG59XHJcbi53aXNoX190aXRsZSB7XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIGNvbG9yOiAjZmNhY2FkO1xyXG4gIGZvbnQtc2l6ZTogMjJweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLndpc2hfX3NpemUge1xyXG4gIGZvbnQtZmFtaWx5OiBkaWFtb25kRm9udDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgY29sb3I6ICNmY2FjYWQ7XHJcbiAgZm9udC13ZWlnaHQ6IDgwMDtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbn1cclxuLndpc2hfX2NvbnRyb2xzIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcbi53aXNoX19jb250cm9scyBkaXYge1xyXG4gIG1hcmdpbi1sZWZ0OiAxNXB4O1xyXG59XHJcbi53aXNoX19jb250cm9scyBkaXY6Zmlyc3QtY2hpbGQge1xyXG4gIG1hcmdpbi1sZWZ0OiAwO1xyXG59XHJcbi53aXNoX19jb250YWluZXJfZGFyayBoMSB7XHJcbiAgY29sb3I6ICMwMDAwMDA7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcclxufVxyXG4ud2lzaF9fY29udGFpbmVyX2RhcmsgLndpc2hfX3RpdGxlLCAud2lzaF9fY29udGFpbmVyX2RhcmsgLndpc2hfX3NpemUge1xyXG4gIGNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbiJdfQ== */";
     /***/
   },
 
   /***/
-  "./src/app/test/test.component.ts":
+  "./src/app/wish/wish.component.ts":
   /*!****************************************!*\
-    !*** ./src/app/test/test.component.ts ***!
+    !*** ./src/app/wish/wish.component.ts ***!
     \****************************************/
 
-  /*! exports provided: TestComponent */
+  /*! exports provided: WishComponent */
 
   /***/
-  function srcAppTestTestComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppWishWishComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "TestComponent", function () {
-      return TestComponent;
+    __webpack_require__.d(__webpack_exports__, "WishComponent", function () {
+      return WishComponent;
     });
     /* harmony import */
 
@@ -1499,29 +1782,72 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
 
-    var TestComponent = /*#__PURE__*/function () {
-      function TestComponent() {
-        _classCallCheck(this, TestComponent);
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../dark-side.service */
+    "./src/app/dark-side.service.ts");
+
+    var WishComponent = /*#__PURE__*/function () {
+      function WishComponent(darkSideService) {
+        _classCallCheck(this, WishComponent);
+
+        this.darkSideService = darkSideService;
+        this.sizes = {
+          nasty: 0,
+          oleg: 0
+        };
       }
 
-      _createClass(TestComponent, [{
+      _createClass(WishComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "plusSize",
+        value: function plusSize(name) {
+          this.sizes[name]++;
+        }
+      }, {
+        key: "minusSize",
+        value: function minusSize(name) {
+          this.sizes[name]--;
+        }
       }]);
 
-      return TestComponent;
+      return WishComponent;
     }();
 
-    TestComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-test',
+    WishComponent.ctorParameters = function () {
+      return [{
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_3__["DarkSideService"]
+      }];
+    };
+
+    WishComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-wish',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./test.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/test/test.component.html"))["default"],
+      /*! raw-loader!./wish.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/wish/wish.component.html"))["default"],
+      animations: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('inOutAnimation', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+        opacity: 0
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('0.3s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+        opacity: 1
+      }))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+        opacity: 1
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('0.3s ease-in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+        opacity: 0
+      }))])])],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./test.component.css */
-      "./src/app/test/test.component.css"))["default"]]
-    })], TestComponent);
+      /*! ./wish.component.css */
+      "./src/app/wish/wish.component.css"))["default"]]
+    })], WishComponent);
     /***/
   },
 

@@ -9,7 +9,7 @@
 
   /***/
   function node_modulesAngularDevkitBuildAngularSrcAngularCliFilesPluginsRawCssLoaderJsNode_modulesPostcssLoaderSrcIndexJsSrcStylesCss(module, exports) {
-    module.exports = [[module.i, "@font-face {\n  font-family: madeFont;\n  src: url('madeFont.otf');\n}\nbody {\n  margin: 0;\n  background-color: #eedac1;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0VBQ3JCLHdCQUFtQztBQUNyQztBQUNBO0VBQ0UsU0FBUztFQUNULHlCQUF5QjtBQUMzQiIsImZpbGUiOiJzcmMvc3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogbWFkZUZvbnQ7XG4gIHNyYzogdXJsKGFzc2V0cy9mb250cy9tYWRlRm9udC5vdGYpO1xufVxuYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2VlZGFjMTtcbn1cbiJdfQ== */", '', '']];
+    module.exports = [[module.i, "@font-face {\n  font-family: madeFont;\n  src: url('madeFont.otf');\n}\n@font-face {\n  font-family: diamondFont;\n  src: url('diamondFont.otf');\n}\nbody {\n  margin: 0;\n  background-color: #fff1f0;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0VBQ3JCLHdCQUFtQztBQUNyQztBQUNBO0VBQ0Usd0JBQXdCO0VBQ3hCLDJCQUFzQztBQUN4QztBQUNBO0VBQ0UsU0FBUztFQUNULHlCQUF5QjtBQUMzQiIsImZpbGUiOiJzcmMvc3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogbWFkZUZvbnQ7XG4gIHNyYzogdXJsKGFzc2V0cy9mb250cy9tYWRlRm9udC5vdGYpO1xufVxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBkaWFtb25kRm9udDtcbiAgc3JjOiB1cmwoYXNzZXRzL2ZvbnRzL2RpYW1vbmRGb250Lm90Zik7XG59XG5ib2R5IHtcbiAgbWFyZ2luOiAwO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmMWYwO1xufVxuIl19 */", '', '']];
     /***/
   },
 
