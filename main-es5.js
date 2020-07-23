@@ -1222,7 +1222,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         for (var i = 0; i < 5; i++) {
           var film = this.randomNumber(0, this.filmsId.length - 1);
-          var url = "http://www.omdbapi.com/?apikey=5dcc54b1&i=".concat(this.filmsId[film]);
+          var url = "https://www.omdbapi.com/?apikey=5dcc54b1&i=".concat(this.filmsId[film]);
           this.http.get(url).subscribe(function (item) {
             _this.film.push(item);
           });

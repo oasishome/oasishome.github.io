@@ -640,7 +640,7 @@ let FilmsService = class FilmsService {
             'tt8946378', 'tt8367814', 'tt7131622', 'tt5606664'];
         for (let i = 0; i < 5; i++) {
             const film = this.randomNumber(0, this.filmsId.length - 1);
-            const url = `http://www.omdbapi.com/?apikey=5dcc54b1&i=${this.filmsId[film]}`;
+            const url = `https://www.omdbapi.com/?apikey=5dcc54b1&i=${this.filmsId[film]}`;
             this.http.get(url).subscribe((item) => {
                 this.film.push(item);
             });
