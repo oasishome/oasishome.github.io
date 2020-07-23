@@ -51,7 +51,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\r\n  <app-header (click)=\"backToMain()\"></app-header>\r\n  <div *ngIf=\"!selectedTab.lohnessy && !selectedTab.grafoman && !selectedTab.film && !selectedTab.wish\" [@inOutAnimation]>\r\n    <h1>Комнаты</h1>\r\n    <div class=\"test__select\">\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_lohnessy\" (click)=\"selectRoom('lohnessy')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Loh Nessy\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_grafoman\" (click)=\"selectRoom('grafoman')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Графоман\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_film\" (click)=\"selectRoom('film')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Кинозал\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_wish\" (click)=\"selectRoom('wish')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Счётчик желаний\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_work\">\r\n          <div class=\"test__select__article__img__title\">\r\n            В разработке\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <app-lohnessy *ngIf=\"selectedTab.lohnessy\" [@inOutAnimation]></app-lohnessy>\r\n\r\n  <app-grafoman *ngIf=\"selectedTab.grafoman\" [@inOutAnimation]></app-grafoman>\r\n\r\n  <app-film *ngIf=\"selectedTab.film\" [@inOutAnimation]></app-film>\r\n\r\n  <app-wish *ngIf=\"selectedTab.wish\" [@inOutAnimation]></app-wish>\r\n\r\n  <app-footer></app-footer>\r\n\r\n</div>\r\n\r\n\r\n<div *ngIf=\"darkSideService.darkSideOn\" class=\"main_dark\" [@inOutAnimation]>\r\n  <app-header (click)=\"backToMain()\"></app-header>\r\n  <div *ngIf=\"!selectedTab.lohnessy && !selectedTab.grafoman && !selectedTab.film && !selectedTab.wish\" [@inOutAnimation]>\r\n    <h1>Комнаты</h1>\r\n    <div class=\"test__select\">\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_lohnessy\" (click)=\"selectRoom('lohnessy')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Loh Nessy\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_grafoman\" (click)=\"selectRoom('grafoman')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Графоман\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_film\" (click)=\"selectRoom('film')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Кинозал\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_wish\" (click)=\"selectRoom('wish')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Счётчик желаний\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_work\">\r\n          <div class=\"test__select__article__img__title\">\r\n            В разработке\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <app-lohnessy *ngIf=\"selectedTab.lohnessy\" [@inOutAnimation]></app-lohnessy>\r\n\r\n  <app-grafoman *ngIf=\"selectedTab.grafoman\" [@inOutAnimation]></app-grafoman>\r\n\r\n  <app-film *ngIf=\"selectedTab.film\" [@inOutAnimation]></app-film>\r\n\r\n  <app-wish *ngIf=\"selectedTab.wish\" [@inOutAnimation]></app-wish>\r\n\r\n  <app-footer></app-footer>\r\n\r\n</div>\r\n\r\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation] class=\"main_white\">\r\n  <app-header (click)=\"backToMain()\"></app-header>\r\n  <div *ngIf=\"!selectedTab.lohnessy && !selectedTab.grafoman && !selectedTab.film && !selectedTab.wish && !selectedTab.calendar && !selectedTab.trueFalseGame\" [@inOutAnimation]>\r\n    <h1>Комнаты</h1>\r\n    <div class=\"test__select\">\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_lohnessy\" (click)=\"selectRoom('lohnessy')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Loh Nessy\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_grafoman\" (click)=\"selectRoom('grafoman')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Графоман\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_film\" (click)=\"selectRoom('film')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Кинозал\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n      <div class=\"test__select__article__img test__select__article__img_wish\" (click)=\"selectRoom('wish')\">\r\n        <div class=\"test__select__article__img__title\">\r\n          Счётчик желаний\r\n        </div>\r\n      </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_calendar\" (click)=\"selectRoom('calendar')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Календарь <br> любви\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_true-false\" (click)=\"selectRoom('trueFalseGame')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Правда <br> или <br> Действие\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_work\">\r\n          <div class=\"test__select__article__img__title\">\r\n            В разработке\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <app-lohnessy *ngIf=\"selectedTab.lohnessy\" [@inOutAnimation]></app-lohnessy>\r\n\r\n  <app-grafoman *ngIf=\"selectedTab.grafoman\" [@inOutAnimation]></app-grafoman>\r\n\r\n  <app-film *ngIf=\"selectedTab.film\" [@inOutAnimation]></app-film>\r\n\r\n  <app-wish *ngIf=\"selectedTab.wish\" [@inOutAnimation]></app-wish>\r\n\r\n  <app-calendar *ngIf=\"selectedTab.calendar\" [@inOutAnimation]></app-calendar>\r\n\r\n  <app-true-false *ngIf=\"selectedTab.trueFalseGame\" [@inOutAnimation]></app-true-false>\r\n\r\n  <app-footer></app-footer>\r\n\r\n</div>\r\n\r\n\r\n<div *ngIf=\"darkSideService.darkSideOn\" class=\"main_dark\" [@inOutAnimation]>\r\n  <app-header (click)=\"backToMain()\"></app-header>\r\n  <div *ngIf=\"!selectedTab.lohnessy && !selectedTab.grafoman && !selectedTab.film && !selectedTab.wish && !selectedTab.calendar && !selectedTab.trueFalseGame\" [@inOutAnimation]>\r\n    <h1>Комнаты</h1>\r\n    <div class=\"test__select\">\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_lohnessy\" (click)=\"selectRoom('lohnessy')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Loh Nessy\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_grafoman\" (click)=\"selectRoom('grafoman')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Графоман\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_film\" (click)=\"selectRoom('film')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Кинозал\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_wish\" (click)=\"selectRoom('wish')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Счётчик желаний\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_calendar\" (click)=\"selectRoom('calendar')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Календарь <br> любви\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_true-false\" (click)=\"selectRoom('trueFalseGame')\">\r\n          <div class=\"test__select__article__img__title\">\r\n            Правда <br> или <br> Действие\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"test__select__article\">\r\n        <div class=\"test__select__article__img test__select__article__img_work\">\r\n          <div class=\"test__select__article__img__title\">\r\n            В разработке\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <app-lohnessy *ngIf=\"selectedTab.lohnessy\" [@inOutAnimation]></app-lohnessy>\r\n\r\n  <app-grafoman *ngIf=\"selectedTab.grafoman\" [@inOutAnimation]></app-grafoman>\r\n\r\n  <app-film *ngIf=\"selectedTab.film\" [@inOutAnimation]></app-film>\r\n\r\n  <app-wish *ngIf=\"selectedTab.wish\" [@inOutAnimation]></app-wish>\r\n\r\n  <app-calendar *ngIf=\"selectedTab.calendar\" [@inOutAnimation]></app-calendar>\r\n\r\n  <app-true-false *ngIf=\"selectedTab.trueFalseGame\" [@inOutAnimation]></app-true-false>\r\n\r\n  <app-footer></app-footer>\r\n\r\n</div>\r\n\r\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/calendar/calendar.component.html":
+  /*!****************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/calendar/calendar.component.html ***!
+    \****************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppCalendarCalendarComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"calendar__container\" *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div class=\"calendar__title\">\n    Сегодня сильнее любит:\n  </div>\n  <div class=\"calendar__name\" *ngIf=\"isNasty\">\n    Настя^^\n  </div>\n  <div class=\"calendar__name\" *ngIf=\"!isNasty\">\n    Олег:3\n  </div>\n</div>\n\n<div class=\"calendar__container calendar__container_dark\" *ngIf=\"darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div class=\"calendar__title\">\n    Сегодня сильнее любит:\n  </div>\n  <div class=\"calendar__name\" *ngIf=\"isNasty\">\n    Настя^^\n  </div>\n  <div class=\"calendar__name\" *ngIf=\"!isNasty\">\n    Олег:3\n  </div>\n</div>\n";
     /***/
   },
 
@@ -152,6 +172,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
     __webpack_exports__["default"] = "<div class=\"lohnessy__container\" *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div *ngFor=\"let img of arts\" [style.width.%]=\"randomWidth()\" class=\"lohnessy__article\">\n    <div class=\"lohnessy__article__img\">\n      <img [src]=\"img.url\" alt=\"\">\n      <div class=\"lohnessy__article__border-top\"></div>\n      <div class=\"lohnessy__article__border-top-left\"></div>\n      <div class=\"lohnessy__article__border-bottom\"></div>\n      <div class=\"lohnessy__article__border-bottom-right\"></div>\n    </div>\n    <p>{{img.label}}</p>\n  </div>\n</div>\n\n<div class=\"lohnessy__container lohnessy__container_dark\" *ngIf=\"darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div *ngFor=\"let img of arts\" [style.width.%]=\"randomWidth()\" class=\"lohnessy__article\">\n    <div class=\"lohnessy__article__img\">\n      <img [src]=\"img.url\" alt=\"\">\n      <div class=\"lohnessy__article__border-top\"></div>\n      <div class=\"lohnessy__article__border-top-left\"></div>\n      <div class=\"lohnessy__article__border-bottom\"></div>\n      <div class=\"lohnessy__article__border-bottom-right\"></div>\n    </div>\n    <p>{{img.label}}</p>\n  </div>\n</div>\n\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/true-false/true-false.component.html":
+  /*!********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/true-false/true-false.component.html ***!
+    \********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppTrueFalseTrueFalseComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"true-false__container\" *ngIf=\"!darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div class=\"true-false__question\">\n    {{currentQuestion}}\n  </div>\n  <div class=\"true-false__buttons\">\n    <div class=\"true-false__buttons__question\" (click)=\"selectQuestion()\">Правда</div>\n    <div class=\"true-false__buttons__action\" (click)=\"selectAction()\">Действие</div>\n  </div>\n</div>\n\n<div class=\"true-false__container true-false__container_dark\" *ngIf=\"darkSideService.darkSideOn\" [@inOutAnimation]>\n  <div class=\"true-false__question\">\n    {{currentQuestion}}\n  </div>\n  <div class=\"true-false__buttons\">\n    <div class=\"true-false__buttons__question\" (click)=\"selectQuestion()\">Правда</div>\n    <div class=\"true-false__buttons__action\" (click)=\"selectAction()\">Действие</div>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -795,7 +835,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "h1 {\r\n  text-align: center;\r\n  font-family: Rumpelstiltskin;\r\n  color: #fcacad;\r\n  margin: 20px 15px 0;\r\n  font-size: 48px;\r\n  line-height: 48px;\r\n  background-color: #ffe4e1;\r\n  padding: 5px;\r\n}\r\n.test__select {\r\n  width: 70%;\r\n  margin: 50px auto 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n.test__select__article {\r\n  width: 31.5%;\r\n  margin-left: 15px;\r\n  border-radius: 3px;\r\n  border: 10px solid #ffe4e1;\r\n}\r\n.test__select__article__img {\r\n  box-shadow: inset 0px 0px 150px 40px rgba(0, 0, 0, 0.5);\r\n}\r\n.test__select__article:nth-child(3n+1) {\r\n  margin-left: 0;\r\n}\r\n.test__select__article:nth-child(n+4) {\r\n  margin-top: 45px;\r\n}\r\n.test__select__article__img {\r\n  height: 320px;\r\n  background-color: black;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-position: center;\r\n  display: flex;\r\n  align-items: center;\r\n  transition: 0.3s;\r\n}\r\n.test__select__article__img_lohnessy {\r\n  background-image: url('nasty.jpg');\r\n}\r\n.test__select__article__img_grafoman {\r\n  background-image: url('grafoman.jpg');\r\n}\r\n.test__select__article__img_film {\r\n  background-image: url('film.jpg');\r\n}\r\n.test__select__article__img_wish {\r\n  background-image: url('wish.jpg');\r\n}\r\n.test__select__article__img_work {\r\n  background-image: url('work.jpg');\r\n}\r\n.test__select__article__img__title {\r\n  color: #ffffff;\r\n  font-size: 48px;\r\n  line-height: 36px;\r\n  font-family: madeFont;\r\n  width: 100%;\r\n  text-align: center;\r\n}\r\n.main_dark {\r\n  background-color: #000000;\r\n}\r\n.main_dark h1 {\r\n  background-color: #ffffff;\r\n  color: #000000;\r\n}\r\n.main_dark .test__select__article {\r\n  border-color: #ffffff;\r\n}\r\n@media (max-width: 640px) {\r\n  .test__select {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n  }\r\n  .test__select__article {\r\n    width: 100%;\r\n    margin: 0 15px 30px;\r\n  }\r\n  .test__select__article:nth-child(3n+1) {\r\n    margin-left: 15px;\r\n  }\r\n  .test__select__article:nth-child(n+4) {\r\n    margin-top: 15px;\r\n  }\r\n  h1 {\r\n    font-family: diamondFont;\r\n    margin-top: 40px;\r\n    font-size: 28px;\r\n    line-height: 28px;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsNEJBQTRCO0VBQzVCLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQix5QkFBeUI7RUFDekIsWUFBWTtBQUNkO0FBQ0E7RUFDRSxVQUFVO0VBQ1YsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQiwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLHVEQUF1RDtBQUN6RDtBQUNBO0VBQ0UsY0FBYztBQUNoQjtBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLHNCQUFzQjtFQUN0Qiw0QkFBNEI7RUFDNUIsMkJBQTJCO0VBQzNCLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxrQ0FBZ0Q7QUFDbEQ7QUFDQTtFQUNFLHFDQUFtRDtBQUNyRDtBQUNBO0VBQ0UsaUNBQStDO0FBQ2pEO0FBQ0E7RUFDRSxpQ0FBK0M7QUFDakQ7QUFDQTtFQUNFLGlDQUErQztBQUNqRDtBQUNBO0VBQ0UsY0FBYztFQUNkLGVBQWU7RUFDZixpQkFBaUI7RUFDakIscUJBQXFCO0VBQ3JCLFdBQVc7RUFDWCxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7QUFDaEI7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0U7SUFDRSxXQUFXO0lBQ1gsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRSxXQUFXO0lBQ1gsbUJBQW1CO0VBQ3JCO0VBQ0E7SUFDRSxpQkFBaUI7RUFDbkI7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjtFQUNBO0lBQ0Usd0JBQXdCO0lBQ3hCLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsaUJBQWlCO0VBQ25CO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgxIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZm9udC1mYW1pbHk6IFJ1bXBlbHN0aWx0c2tpbjtcclxuICBjb2xvcjogI2ZjYWNhZDtcclxuICBtYXJnaW46IDIwcHggMTVweCAwO1xyXG4gIGZvbnQtc2l6ZTogNDhweDtcclxuICBsaW5lLWhlaWdodDogNDhweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZlNGUxO1xyXG4gIHBhZGRpbmc6IDVweDtcclxufVxyXG4udGVzdF9fc2VsZWN0IHtcclxuICB3aWR0aDogNzAlO1xyXG4gIG1hcmdpbjogNTBweCBhdXRvIDA7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LXdyYXA6IHdyYXA7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZSB7XHJcbiAgd2lkdGg6IDMxLjUlO1xyXG4gIG1hcmdpbi1sZWZ0OiAxNXB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDNweDtcclxuICBib3JkZXI6IDEwcHggc29saWQgI2ZmZTRlMTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWcge1xyXG4gIGJveC1zaGFkb3c6IGluc2V0IDBweCAwcHggMTUwcHggNDBweCByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZTpudGgtY2hpbGQoM24rMSkge1xyXG4gIG1hcmdpbi1sZWZ0OiAwO1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGU6bnRoLWNoaWxkKG4rNCkge1xyXG4gIG1hcmdpbi10b3A6IDQ1cHg7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nIHtcclxuICBoZWlnaHQ6IDMyMHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIHRyYW5zaXRpb246IDAuM3M7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2xvaG5lc3N5IHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvbmFzdHkuanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2dyYWZvbWFuIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvZ3JhZm9tYW4uanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2ZpbG0ge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL2ltZy9maWxtLmpwZycpO1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGVfX2ltZ193aXNoIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvd2lzaC5qcGcnKTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWdfd29yayB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi9hc3NldHMvaW1nL3dvcmsuanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX190aXRsZSB7XHJcbiAgY29sb3I6ICNmZmZmZmY7XHJcbiAgZm9udC1zaXplOiA0OHB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAzNnB4O1xyXG4gIGZvbnQtZmFtaWx5OiBtYWRlRm9udDtcclxuICB3aWR0aDogMTAwJTtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLm1haW5fZGFyayB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDAwMDtcclxufVxyXG4ubWFpbl9kYXJrIGgxIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xyXG4gIGNvbG9yOiAjMDAwMDAwO1xyXG59XHJcbi5tYWluX2RhcmsgLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZSB7XHJcbiAgYm9yZGVyLWNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2NDBweCkge1xyXG4gIC50ZXN0X19zZWxlY3Qge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gIH1cclxuICAudGVzdF9fc2VsZWN0X19hcnRpY2xlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWFyZ2luOiAwIDE1cHggMzBweDtcclxuICB9XHJcbiAgLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZTpudGgtY2hpbGQoM24rMSkge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDE1cHg7XHJcbiAgfVxyXG4gIC50ZXN0X19zZWxlY3RfX2FydGljbGU6bnRoLWNoaWxkKG4rNCkge1xyXG4gICAgbWFyZ2luLXRvcDogMTVweDtcclxuICB9XHJcbiAgaDEge1xyXG4gICAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gICAgbWFyZ2luLXRvcDogNDBweDtcclxuICAgIGZvbnQtc2l6ZTogMjhweDtcclxuICAgIGxpbmUtaGVpZ2h0OiAyOHB4O1xyXG4gIH1cclxufVxyXG4iXX0= */";
+    __webpack_exports__["default"] = "h1 {\r\n  text-align: center;\r\n  font-family: Rumpelstiltskin;\r\n  color: #fcacad;\r\n  margin: 20px 15px 0;\r\n  font-size: 48px;\r\n  line-height: 48px;\r\n  background-color: #ffe4e1;\r\n  padding: 5px;\r\n}\r\n.test__select {\r\n  width: 70%;\r\n  margin: 50px auto 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n.test__select__article {\r\n  width: 31.5%;\r\n  margin-left: 15px;\r\n  border-radius: 3px;\r\n  border: 10px solid #ffe4e1;\r\n}\r\n.test__select__article__img {\r\n  box-shadow: inset 0px 0px 150px 40px rgba(0, 0, 0, 0.5);\r\n}\r\n.test__select__article:nth-child(3n+1) {\r\n  margin-left: 0;\r\n}\r\n.test__select__article:nth-child(n+4) {\r\n  margin-top: 45px;\r\n}\r\n.test__select__article__img {\r\n  height: 320px;\r\n  background-color: black;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-position: center;\r\n  display: flex;\r\n  align-items: center;\r\n  transition: 0.3s;\r\n}\r\n.test__select__article__img_lohnessy {\r\n  background-image: url('nasty.jpg');\r\n}\r\n.test__select__article__img_grafoman {\r\n  background-image: url('grafoman.jpg');\r\n}\r\n.test__select__article__img_film {\r\n  background-image: url('film.jpg');\r\n}\r\n.test__select__article__img_wish {\r\n  background-image: url('wish.jpg');\r\n}\r\n.test__select__article__img_calendar {\r\n  background-image: url('calendar.jpg');\r\n}\r\n.test__select__article__img_true-false {\r\n  background-image: url('true-false.jpg');\r\n}\r\n.test__select__article__img_work {\r\n  background-image: url('work.jpg');\r\n}\r\n.test__select__article__img__title {\r\n  color: #ffffff;\r\n  font-size: 48px;\r\n  line-height: 48px;\r\n  font-family: madeFont;\r\n  width: 100%;\r\n  text-align: center;\r\n}\r\n.main_dark {\r\n  background-color: #000000;\r\n}\r\n.main_white {\r\n  background-color: #fff1f0;\r\n}\r\n.main_dark h1 {\r\n  background-color: #ffffff;\r\n  color: #000000;\r\n}\r\n.main_dark .test__select__article {\r\n  border-color: #ffffff;\r\n}\r\n@media (max-width: 640px) {\r\n  .test__select {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n  }\r\n  .test__select__article {\r\n    width: 100%;\r\n    margin: 0 15px 30px;\r\n  }\r\n  .test__select__article:nth-child(3n+1) {\r\n    margin-left: 15px;\r\n  }\r\n  .test__select__article:nth-child(n+4) {\r\n    margin-top: 15px;\r\n  }\r\n  h1 {\r\n    font-family: diamondFont;\r\n    margin-top: 40px;\r\n    font-size: 28px;\r\n    line-height: 28px;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsNEJBQTRCO0VBQzVCLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQix5QkFBeUI7RUFDekIsWUFBWTtBQUNkO0FBQ0E7RUFDRSxVQUFVO0VBQ1YsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQiwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLHVEQUF1RDtBQUN6RDtBQUNBO0VBQ0UsY0FBYztBQUNoQjtBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLHNCQUFzQjtFQUN0Qiw0QkFBNEI7RUFDNUIsMkJBQTJCO0VBQzNCLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxrQ0FBZ0Q7QUFDbEQ7QUFDQTtFQUNFLHFDQUFtRDtBQUNyRDtBQUNBO0VBQ0UsaUNBQStDO0FBQ2pEO0FBQ0E7RUFDRSxpQ0FBK0M7QUFDakQ7QUFDQTtFQUNFLHFDQUFtRDtBQUNyRDtBQUNBO0VBQ0UsdUNBQXFEO0FBQ3ZEO0FBQ0E7RUFDRSxpQ0FBK0M7QUFDakQ7QUFDQTtFQUNFLGNBQWM7RUFDZCxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLHFCQUFxQjtFQUNyQixXQUFXO0VBQ1gsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7QUFDaEI7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0U7SUFDRSxXQUFXO0lBQ1gsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRSxXQUFXO0lBQ1gsbUJBQW1CO0VBQ3JCO0VBQ0E7SUFDRSxpQkFBaUI7RUFDbkI7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjtFQUNBO0lBQ0Usd0JBQXdCO0lBQ3hCLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsaUJBQWlCO0VBQ25CO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgxIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZm9udC1mYW1pbHk6IFJ1bXBlbHN0aWx0c2tpbjtcclxuICBjb2xvcjogI2ZjYWNhZDtcclxuICBtYXJnaW46IDIwcHggMTVweCAwO1xyXG4gIGZvbnQtc2l6ZTogNDhweDtcclxuICBsaW5lLWhlaWdodDogNDhweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZlNGUxO1xyXG4gIHBhZGRpbmc6IDVweDtcclxufVxyXG4udGVzdF9fc2VsZWN0IHtcclxuICB3aWR0aDogNzAlO1xyXG4gIG1hcmdpbjogNTBweCBhdXRvIDA7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LXdyYXA6IHdyYXA7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZSB7XHJcbiAgd2lkdGg6IDMxLjUlO1xyXG4gIG1hcmdpbi1sZWZ0OiAxNXB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDNweDtcclxuICBib3JkZXI6IDEwcHggc29saWQgI2ZmZTRlMTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWcge1xyXG4gIGJveC1zaGFkb3c6IGluc2V0IDBweCAwcHggMTUwcHggNDBweCByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZTpudGgtY2hpbGQoM24rMSkge1xyXG4gIG1hcmdpbi1sZWZ0OiAwO1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGU6bnRoLWNoaWxkKG4rNCkge1xyXG4gIG1hcmdpbi10b3A6IDQ1cHg7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nIHtcclxuICBoZWlnaHQ6IDMyMHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIHRyYW5zaXRpb246IDAuM3M7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2xvaG5lc3N5IHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvbmFzdHkuanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2dyYWZvbWFuIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvZ3JhZm9tYW4uanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX2ZpbG0ge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL2ltZy9maWxtLmpwZycpO1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGVfX2ltZ193aXNoIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2Fzc2V0cy9pbWcvd2lzaC5qcGcnKTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWdfY2FsZW5kYXIge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL2ltZy9jYWxlbmRhci5qcGcnKTtcclxufVxyXG4udGVzdF9fc2VsZWN0X19hcnRpY2xlX19pbWdfdHJ1ZS1mYWxzZSB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi9hc3NldHMvaW1nL3RydWUtZmFsc2UuanBnJyk7XHJcbn1cclxuLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZV9faW1nX3dvcmsge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL2ltZy93b3JrLmpwZycpO1xyXG59XHJcbi50ZXN0X19zZWxlY3RfX2FydGljbGVfX2ltZ19fdGl0bGUge1xyXG4gIGNvbG9yOiAjZmZmZmZmO1xyXG4gIGZvbnQtc2l6ZTogNDhweDtcclxuICBsaW5lLWhlaWdodDogNDhweDtcclxuICBmb250LWZhbWlseTogbWFkZUZvbnQ7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbi5tYWluX2Rhcmsge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDAwMDA7XHJcbn1cclxuLm1haW5fd2hpdGUge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmYxZjA7XHJcbn1cclxuLm1haW5fZGFyayBoMSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcclxuICBjb2xvcjogIzAwMDAwMDtcclxufVxyXG4ubWFpbl9kYXJrIC50ZXN0X19zZWxlY3RfX2FydGljbGUge1xyXG4gIGJvcmRlci1jb2xvcjogI2ZmZmZmZjtcclxufVxyXG5AbWVkaWEgKG1heC13aWR0aDogNjQwcHgpIHtcclxuICAudGVzdF9fc2VsZWN0IHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWFyZ2luLXRvcDogMjBweDtcclxuICB9XHJcbiAgLnRlc3RfX3NlbGVjdF9fYXJ0aWNsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1hcmdpbjogMCAxNXB4IDMwcHg7XHJcbiAgfVxyXG4gIC50ZXN0X19zZWxlY3RfX2FydGljbGU6bnRoLWNoaWxkKDNuKzEpIHtcclxuICAgIG1hcmdpbi1sZWZ0OiAxNXB4O1xyXG4gIH1cclxuICAudGVzdF9fc2VsZWN0X19hcnRpY2xlOm50aC1jaGlsZChuKzQpIHtcclxuICAgIG1hcmdpbi10b3A6IDE1cHg7XHJcbiAgfVxyXG4gIGgxIHtcclxuICAgIGZvbnQtZmFtaWx5OiBkaWFtb25kRm9udDtcclxuICAgIG1hcmdpbi10b3A6IDQwcHg7XHJcbiAgICBmb250LXNpemU6IDI4cHg7XHJcbiAgICBsaW5lLWhlaWdodDogMjhweDtcclxuICB9XHJcbn1cclxuIl19 */";
     /***/
   },
 
@@ -853,7 +893,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           lohnessy: false,
           grafoman: false,
           film: false,
-          wish: false
+          wish: false,
+          calendar: false,
+          trueFalseGame: false
         };
       }
 
@@ -864,6 +906,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.selectedTab.grafoman = false;
           this.selectedTab.film = false;
           this.selectedTab.wish = false;
+          this.selectedTab.calendar = false;
+          this.selectedTab.trueFalseGame = false;
           setTimeout(function () {
             window.scrollTo(0, 0);
           }, 100);
@@ -999,17 +1043,144 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _wish_wish_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./wish/wish.component */
     "./src/app/wish/wish.component.ts");
+    /* harmony import */
+
+
+    var _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./calendar/calendar.component */
+    "./src/app/calendar/calendar.component.ts");
+    /* harmony import */
+
+
+    var _true_false_true_false_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! ./true-false/true-false.component */
+    "./src/app/true-false/true-false.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _lohnessy_lohnessy_component__WEBPACK_IMPORTED_MODULE_7__["LohnessyComponent"], _grafoman_grafoman_component__WEBPACK_IMPORTED_MODULE_8__["GrafomanComponent"], _film_film_component__WEBPACK_IMPORTED_MODULE_9__["FilmComponent"], _wish_wish_component__WEBPACK_IMPORTED_MODULE_11__["WishComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _lohnessy_lohnessy_component__WEBPACK_IMPORTED_MODULE_7__["LohnessyComponent"], _grafoman_grafoman_component__WEBPACK_IMPORTED_MODULE_8__["GrafomanComponent"], _film_film_component__WEBPACK_IMPORTED_MODULE_9__["FilmComponent"], _wish_wish_component__WEBPACK_IMPORTED_MODULE_11__["WishComponent"], _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_12__["CalendarComponent"], _true_false_true_false_component__WEBPACK_IMPORTED_MODULE_13__["TrueFalseComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/calendar/calendar.component.css":
+  /*!*************************************************!*\
+    !*** ./src/app/calendar/calendar.component.css ***!
+    \*************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppCalendarCalendarComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".calendar__title {\r\n  font-family: diamondFont;\r\n  font-size: 24px;\r\n  margin-bottom: 30px;\r\n  padding-top: 50px;\r\n  color: #fcacad;\r\n  text-align: center;\r\n}\r\n.calendar__name {\r\n  font-family: diamondFont;\r\n  font-size: 48px;\r\n  margin-bottom: 47vh;\r\n  padding-top: 40px;\r\n  color: #fcacad;\r\n  text-align: center;\r\n}\r\n.calendar__container_dark .calendar__title, .calendar__container_dark .calendar__name{\r\n  color: #ffffff;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2FsZW5kYXIvY2FsZW5kYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHdCQUF3QjtFQUN4QixlQUFlO0VBQ2YsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSx3QkFBd0I7RUFDeEIsZUFBZTtFQUNmLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsY0FBYztFQUNkLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2NhbGVuZGFyL2NhbGVuZGFyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FsZW5kYXJfX3RpdGxlIHtcclxuICBmb250LWZhbWlseTogZGlhbW9uZEZvbnQ7XHJcbiAgZm9udC1zaXplOiAyNHB4O1xyXG4gIG1hcmdpbi1ib3R0b206IDMwcHg7XHJcbiAgcGFkZGluZy10b3A6IDUwcHg7XHJcbiAgY29sb3I6ICNmY2FjYWQ7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbi5jYWxlbmRhcl9fbmFtZSB7XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIGZvbnQtc2l6ZTogNDhweDtcclxuICBtYXJnaW4tYm90dG9tOiA0N3ZoO1xyXG4gIHBhZGRpbmctdG9wOiA0MHB4O1xyXG4gIGNvbG9yOiAjZmNhY2FkO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG4uY2FsZW5kYXJfX2NvbnRhaW5lcl9kYXJrIC5jYWxlbmRhcl9fdGl0bGUsIC5jYWxlbmRhcl9fY29udGFpbmVyX2RhcmsgLmNhbGVuZGFyX19uYW1le1xyXG4gIGNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbiJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/calendar/calendar.component.ts":
+  /*!************************************************!*\
+    !*** ./src/app/calendar/calendar.component.ts ***!
+    \************************************************/
+
+  /*! exports provided: CalendarComponent */
+
+  /***/
+  function srcAppCalendarCalendarComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CalendarComponent", function () {
+      return CalendarComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../dark-side.service */
+    "./src/app/dark-side.service.ts");
+    /* harmony import */
+
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js");
+
+    var CalendarComponent = /*#__PURE__*/function () {
+      function CalendarComponent(darkSideService) {
+        _classCallCheck(this, CalendarComponent);
+
+        this.darkSideService = darkSideService;
+        this.currentDay = 0;
+        this.isNasty = false;
+      }
+
+      _createClass(CalendarComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var date = new Date();
+          this.currentDay = date.getDate();
+
+          if (this.currentDay % 2 === 0) {
+            this.isNasty = true;
+          }
+        }
+      }]);
+
+      return CalendarComponent;
+    }();
+
+    CalendarComponent.ctorParameters = function () {
+      return [{
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_2__["DarkSideService"]
+      }];
+    };
+
+    CalendarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-calendar',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./calendar.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/calendar/calendar.component.html"))["default"],
+      animations: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["trigger"])('inOutAnimation', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 0
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["animate"])('0.3s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 1
+      }))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["transition"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 1
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["animate"])('0.3s ease-in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_3__["style"])({
+        opacity: 0
+      }))])])],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./calendar.component.css */
+      "./src/app/calendar/calendar.component.css"))["default"]]
+    })], CalendarComponent);
     /***/
   },
 
@@ -1319,11 +1490,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(FooterComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          if (localStorage.getItem('darkside') === '1') {
+            this.darkSideService.darkSideOn = true;
+          } else if (localStorage.getItem('darkside') === '0') {
+            this.darkSideService.darkSideOn = false;
+          }
+        }
       }, {
         key: "changeSide",
         value: function changeSide() {
           this.darkSideService.darkSideOn = !this.darkSideService.darkSideOn;
+
+          if (this.darkSideService.darkSideOn) {
+            localStorage.setItem('darkside', '1');
+          } else {
+            localStorage.setItem('darkside', '0');
+          }
         }
       }]);
 
@@ -1661,26 +1844,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           label: 'Ло',
           url: '../../assets/img/nasty-8.jpg'
         }, {
-          label: '9',
+          label: 'Осень',
           url: '../../assets/img/nasty-9.jpg'
         }, {
-          label: '10',
+          label: 'Дама с Амстердама',
           url: '../../assets/img/nasty-10.jpg'
         }, {
-          label: '11',
+          label: 'Женщина',
           url: '../../assets/img/nasty-11.jpg'
         }, {
-          label: '12',
+          label: 'Нормальная Хоффманита',
           url: '../../assets/img/nasty-12.jpg'
         }, {
-          label: '13',
+          label: 'Земля в иллюминаторе',
           url: '../../assets/img/nasty-13.jpg'
         }, {
-          label: '14',
+          label: 'Костёр во тьме',
           url: '../../assets/img/nasty-14.jpg'
         }, {
-          label: '15',
+          label: 'Душа',
           url: '../../assets/img/nasty-15.jpg'
+        }, {
+          label: 'Судьба',
+          url: '../../assets/img/nasty-16.jpg'
+        }, {
+          label: 'Потери войны',
+          url: '../../assets/img/nasty-17.jpg'
+        }, {
+          label: 'Магия воды',
+          url: '../../assets/img/nasty-18.jpg'
+        }, {
+          label: 'Зелёноволосая фифа',
+          url: '../../assets/img/nasty-19.jpg'
+        }, {
+          label: 'Мы - растения',
+          url: '../../assets/img/nasty-20.jpg'
+        }, {
+          label: 'Ля какая попка',
+          url: '../../assets/img/nasty-21.jpg'
+        }, {
+          label: 'Отвал бошки',
+          url: '../../assets/img/nasty-22.jpg'
+        }, {
+          label: 'Царь',
+          url: '../../assets/img/nasty-23.jpg'
+        }, {
+          label: 'Шаман Кинг',
+          url: '../../assets/img/nasty-24.jpg'
+        }, {
+          label: 'Звезда',
+          url: '../../assets/img/nasty-25.jpg'
         }];
       }
 
@@ -1732,6 +1945,183 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/true-false.service.ts":
+  /*!***************************************!*\
+    !*** ./src/app/true-false.service.ts ***!
+    \***************************************/
+
+  /*! exports provided: TrueFalseService */
+
+  /***/
+  function srcAppTrueFalseServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TrueFalseService", function () {
+      return TrueFalseService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var TrueFalseService = function TrueFalseService() {
+      _classCallCheck(this, TrueFalseService);
+
+      this.questions = ['Расскажи про свой сексуальный фетиш?', 'Самая страшная история из детства?', 'Расскажи любой свой секрет и историю из прошлого?', '3 вещи, которых стесняешься?', 'Самая главная обида в жизни?', 'За что до сих пор стыдно?', 'Как влюбляешь и соблазняешь парня/девушку? Твоя стратегия?', 'О чем обычно врешь другим людям?', 'Какой твой самый грязный и неприличный порок?', '3 мои черты характера, которые раздражают тебя?', 'Что бы ты изменил/а во мне', 'Когда у тебя был в последний раз неприличный сон?', 'Самая неловкая вещь, которую делала?', 'Самая темная твоя фантазия и мечта?', 'Какие твои главные вредные привычки?', 'Что готова сделать за 1 миллион долларов? Переспать, сменить пол, убить?', 'О чем ты мечтаешь?', 'Что делала, если стала парнем на один день?', 'Что больше всего боишься потерять?', 'Что притягивает людей друг к другу?', 'Влюблялась ли с другую девушку/парня?', 'Тебе осталось жить только сутки. Что будешь делать?', 'Сколько детей хочешь иметь?', 'Что больше всего раздражает в других людях?', 'Как бы ты потратила миллион долларов?', 'Какая часть тела противоположного пола больше всего заводит?', 'Что самое худшее, что ты когда-либо делал с кем-либо?', 'Что значит для тебя "по-настоящему хороший секс"?', 'Какая твоя любимая поза во время секса?', 'Что для тебя абсолютное табу во время секса?', 'Какой у тебя был самый безумный секс?'];
+      this.actions = ['Поцелуй', 'Спой песню, которая первая пришла в голову', 'Секусально оближи палец', 'Пробеги 10 кругов вокруг себя, а потом резко остановись', 'Сядь к оппоненту на колени и сиди так 10 минут', 'Спародируй типичного меня', 'Сними один элемент одежды', 'Напиши сообщение «я беременна» и отправь 5 случайным контактам', 'Покажи любой фокус', 'Сделай массаж оппоненту', 'Расскажи смешной анекдот или историю, произошедшую с тобой', 'Устрой мне «прожарку». Высмеивай мои недостатки 2 минуты', 'Прислуживай мне несколько минут', 'Нарисуй себе что-то смешное на лице, а затем запость фото в Вк', 'Сделай оппоненту засос', 'Включи песню которая полностью описывает оппонента', 'Целуй тело оппонента везде где хочешь(минимум 20 поцелуев)', 'В следущий раз, в магазине скажи продавцу, что ты лесбиянка/гей', 'Полностью разденься и сиди в таком виде 10 минут', 'Покажи своё самое эрогенное место', 'Сделай вид, что ты впервые в жизни увидела оппонента', 'Сделай кувырок', 'Включи своё любимое порно/хентай', 'Нарисуй свои чувства в данный момент'];
+    };
+
+    TrueFalseService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], TrueFalseService);
+    /***/
+  },
+
+  /***/
+  "./src/app/true-false/true-false.component.css":
+  /*!*****************************************************!*\
+    !*** ./src/app/true-false/true-false.component.css ***!
+    \*****************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppTrueFalseTrueFalseComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".true-false__container {\r\n  margin: 40px 15px 55vh;\r\n}\r\n.true-false__question {\r\n  font-family: diamondFont;\r\n  font-size: 32px;\r\n  line-height: 32px;\r\n  text-align: center;\r\n  color: #fcacad;\r\n}\r\n.true-false__buttons {\r\n  margin-top: 60px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  font-family: diamondFont;\r\n  font-size: 28px;\r\n  color: #ffffff;\r\n}\r\n.true-false__buttons__question {\r\n  background-color: #8cd6ad;\r\n  padding: 5px 0;\r\n  width: 45%;\r\n  text-align: center;\r\n}\r\n.true-false__buttons__action {\r\n  background-color: #f26065;\r\n  padding: 5px 0;\r\n  width: 45%;\r\n  text-align: center;\r\n}\r\n.true-false__container_dark .true-false__question {\r\n  color: #ffffff;\r\n}\r\n.true-false__container_dark .true-false__buttons {\r\n  color: #000000;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdHJ1ZS1mYWxzZS90cnVlLWZhbHNlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxzQkFBc0I7QUFDeEI7QUFDQTtFQUNFLHdCQUF3QjtFQUN4QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLDhCQUE4QjtFQUM5Qix3QkFBd0I7RUFDeEIsZUFBZTtFQUNmLGNBQWM7QUFDaEI7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2QsVUFBVTtFQUNWLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxVQUFVO0VBQ1Ysa0JBQWtCO0FBQ3BCO0FBRUE7RUFDRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxjQUFjO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvdHJ1ZS1mYWxzZS90cnVlLWZhbHNlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudHJ1ZS1mYWxzZV9fY29udGFpbmVyIHtcclxuICBtYXJnaW46IDQwcHggMTVweCA1NXZoO1xyXG59XHJcbi50cnVlLWZhbHNlX19xdWVzdGlvbiB7XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIGZvbnQtc2l6ZTogMzJweDtcclxuICBsaW5lLWhlaWdodDogMzJweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgY29sb3I6ICNmY2FjYWQ7XHJcbn1cclxuLnRydWUtZmFsc2VfX2J1dHRvbnMge1xyXG4gIG1hcmdpbi10b3A6IDYwcHg7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIGZvbnQtc2l6ZTogMjhweDtcclxuICBjb2xvcjogI2ZmZmZmZjtcclxufVxyXG4udHJ1ZS1mYWxzZV9fYnV0dG9uc19fcXVlc3Rpb24ge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM4Y2Q2YWQ7XHJcbiAgcGFkZGluZzogNXB4IDA7XHJcbiAgd2lkdGg6IDQ1JTtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLnRydWUtZmFsc2VfX2J1dHRvbnNfX2FjdGlvbiB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YyNjA2NTtcclxuICBwYWRkaW5nOiA1cHggMDtcclxuICB3aWR0aDogNDUlO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLnRydWUtZmFsc2VfX2NvbnRhaW5lcl9kYXJrIC50cnVlLWZhbHNlX19xdWVzdGlvbiB7XHJcbiAgY29sb3I6ICNmZmZmZmY7XHJcbn1cclxuLnRydWUtZmFsc2VfX2NvbnRhaW5lcl9kYXJrIC50cnVlLWZhbHNlX19idXR0b25zIHtcclxuICBjb2xvcjogIzAwMDAwMDtcclxufVxyXG4iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/true-false/true-false.component.ts":
+  /*!****************************************************!*\
+    !*** ./src/app/true-false/true-false.component.ts ***!
+    \****************************************************/
+
+  /*! exports provided: TrueFalseComponent */
+
+  /***/
+  function srcAppTrueFalseTrueFalseComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TrueFalseComponent", function () {
+      return TrueFalseComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _true_false_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../true-false.service */
+    "./src/app/true-false.service.ts");
+    /* harmony import */
+
+
+    var _dark_side_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../dark-side.service */
+    "./src/app/dark-side.service.ts");
+    /* harmony import */
+
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js");
+
+    var TrueFalseComponent = /*#__PURE__*/function () {
+      function TrueFalseComponent(trueFalseService, darkSideService) {
+        _classCallCheck(this, TrueFalseComponent);
+
+        this.trueFalseService = trueFalseService;
+        this.darkSideService = darkSideService;
+        this.currentQuestion = 'Выбери правду или действие';
+      }
+
+      _createClass(TrueFalseComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "randomNumber",
+        value: function randomNumber(min, max) {
+          var rand = min - 0.5 + Math.random() * (max - min + 1);
+          return Math.round(rand);
+        }
+      }, {
+        key: "selectQuestion",
+        value: function selectQuestion() {
+          this.currentQuestion = this.trueFalseService.questions[this.randomNumber(0, this.trueFalseService.questions.length - 1)];
+        }
+      }, {
+        key: "selectAction",
+        value: function selectAction() {
+          this.currentQuestion = this.trueFalseService.actions[this.randomNumber(0, this.trueFalseService.actions.length - 1)];
+        }
+      }]);
+
+      return TrueFalseComponent;
+    }();
+
+    TrueFalseComponent.ctorParameters = function () {
+      return [{
+        type: _true_false_service__WEBPACK_IMPORTED_MODULE_2__["TrueFalseService"]
+      }, {
+        type: _dark_side_service__WEBPACK_IMPORTED_MODULE_3__["DarkSideService"]
+      }];
+    };
+
+    TrueFalseComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-true-false',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./true-false.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/true-false/true-false.component.html"))["default"],
+      animations: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('inOutAnimation', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        opacity: 0
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.3s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        opacity: 1
+      }))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        opacity: 1
+      }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.3s ease-in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        opacity: 0
+      }))])])],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./true-false.component.css */
+      "./src/app/true-false/true-false.component.css"))["default"]]
+    })], TrueFalseComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/wish/wish.component.css":
   /*!*****************************************!*\
     !*** ./src/app/wish/wish.component.css ***!
@@ -1747,7 +2137,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".wish__container {\r\n  margin: 30px 15px 200px;\r\n}\r\n.wish__container h1 {\r\n  font-family: diamondFont;\r\n  font-size: 28px;\r\n  line-height: 28px;\r\n  color: #fcacad;\r\n  margin: 40px 0 30px;\r\n  background-color: #ffe4e1;\r\n  padding: 5px;\r\n  text-align: center;\r\n}\r\n.wish__container__content {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-left: 30px;\r\n  margin-right: 30px;\r\n}\r\n.wish__title {\r\n  font-family: diamondFont;\r\n  color: #fcacad;\r\n  font-size: 22px;\r\n  text-align: center;\r\n}\r\n.wish__size {\r\n  font-family: diamondFont;\r\n  text-align: center;\r\n  color: #fcacad;\r\n  font-weight: 800;\r\n  font-size: 24px;\r\n}\r\n.wish__controls {\r\n  display: flex;\r\n}\r\n.wish__controls div {\r\n  margin-left: 15px;\r\n}\r\n.wish__controls div:first-child {\r\n  margin-left: 0;\r\n}\r\n.wish__container_dark h1 {\r\n  color: #000000;\r\n  background-color: #ffffff;\r\n}\r\n.wish__container_dark .wish__title, .wish__container_dark .wish__size {\r\n  color: #ffffff;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2lzaC93aXNoLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekI7QUFDQTtFQUNFLHdCQUF3QjtFQUN4QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0Usd0JBQXdCO0VBQ3hCLGNBQWM7RUFDZCxlQUFlO0VBQ2Ysa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSx3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsYUFBYTtBQUNmO0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLGNBQWM7QUFDaEI7QUFDQTtFQUNFLGNBQWM7RUFDZCx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC93aXNoL3dpc2guY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi53aXNoX19jb250YWluZXIge1xyXG4gIG1hcmdpbjogMzBweCAxNXB4IDIwMHB4O1xyXG59XHJcbi53aXNoX19jb250YWluZXIgaDEge1xyXG4gIGZvbnQtZmFtaWx5OiBkaWFtb25kRm9udDtcclxuICBmb250LXNpemU6IDI4cHg7XHJcbiAgbGluZS1oZWlnaHQ6IDI4cHg7XHJcbiAgY29sb3I6ICNmY2FjYWQ7XHJcbiAgbWFyZ2luOiA0MHB4IDAgMzBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZlNGUxO1xyXG4gIHBhZGRpbmc6IDVweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLndpc2hfX2NvbnRhaW5lcl9fY29udGVudCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgbWFyZ2luLWxlZnQ6IDMwcHg7XHJcbiAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xyXG59XHJcbi53aXNoX190aXRsZSB7XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIGNvbG9yOiAjZmNhY2FkO1xyXG4gIGZvbnQtc2l6ZTogMjJweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLndpc2hfX3NpemUge1xyXG4gIGZvbnQtZmFtaWx5OiBkaWFtb25kRm9udDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgY29sb3I6ICNmY2FjYWQ7XHJcbiAgZm9udC13ZWlnaHQ6IDgwMDtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbn1cclxuLndpc2hfX2NvbnRyb2xzIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcbi53aXNoX19jb250cm9scyBkaXYge1xyXG4gIG1hcmdpbi1sZWZ0OiAxNXB4O1xyXG59XHJcbi53aXNoX19jb250cm9scyBkaXY6Zmlyc3QtY2hpbGQge1xyXG4gIG1hcmdpbi1sZWZ0OiAwO1xyXG59XHJcbi53aXNoX19jb250YWluZXJfZGFyayBoMSB7XHJcbiAgY29sb3I6ICMwMDAwMDA7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcclxufVxyXG4ud2lzaF9fY29udGFpbmVyX2RhcmsgLndpc2hfX3RpdGxlLCAud2lzaF9fY29udGFpbmVyX2RhcmsgLndpc2hfX3NpemUge1xyXG4gIGNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbiJdfQ== */";
+    __webpack_exports__["default"] = ".wish__container {\r\n  margin: 30px 15px 55vh;\r\n}\r\n.wish__container h1 {\r\n  font-family: diamondFont;\r\n  font-size: 28px;\r\n  line-height: 28px;\r\n  color: #fcacad;\r\n  margin: 40px 0 30px;\r\n  background-color: #ffe4e1;\r\n  padding: 5px;\r\n  text-align: center;\r\n}\r\n.wish__container__content {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-left: 30px;\r\n  margin-right: 30px;\r\n}\r\n.wish__title {\r\n  font-family: diamondFont;\r\n  color: #fcacad;\r\n  font-size: 22px;\r\n  text-align: center;\r\n}\r\n.wish__size {\r\n  font-family: diamondFont;\r\n  text-align: center;\r\n  color: #fcacad;\r\n  font-weight: 800;\r\n  font-size: 24px;\r\n}\r\n.wish__controls {\r\n  display: flex;\r\n}\r\n.wish__controls div {\r\n  margin-left: 15px;\r\n}\r\n.wish__controls div:first-child {\r\n  margin-left: 0;\r\n}\r\n.wish__container_dark h1 {\r\n  color: #000000;\r\n  background-color: #ffffff;\r\n}\r\n.wish__container_dark .wish__title, .wish__container_dark .wish__size {\r\n  color: #ffffff;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2lzaC93aXNoLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxzQkFBc0I7QUFDeEI7QUFDQTtFQUNFLHdCQUF3QjtFQUN4QixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0Usd0JBQXdCO0VBQ3hCLGNBQWM7RUFDZCxlQUFlO0VBQ2Ysa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSx3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsYUFBYTtBQUNmO0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLGNBQWM7QUFDaEI7QUFDQTtFQUNFLGNBQWM7RUFDZCx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC93aXNoL3dpc2guY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi53aXNoX19jb250YWluZXIge1xyXG4gIG1hcmdpbjogMzBweCAxNXB4IDU1dmg7XHJcbn1cclxuLndpc2hfX2NvbnRhaW5lciBoMSB7XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIGZvbnQtc2l6ZTogMjhweDtcclxuICBsaW5lLWhlaWdodDogMjhweDtcclxuICBjb2xvcjogI2ZjYWNhZDtcclxuICBtYXJnaW46IDQwcHggMCAzMHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmU0ZTE7XHJcbiAgcGFkZGluZzogNXB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG4ud2lzaF9fY29udGFpbmVyX19jb250ZW50IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICBtYXJnaW4tbGVmdDogMzBweDtcclxuICBtYXJnaW4tcmlnaHQ6IDMwcHg7XHJcbn1cclxuLndpc2hfX3RpdGxlIHtcclxuICBmb250LWZhbWlseTogZGlhbW9uZEZvbnQ7XHJcbiAgY29sb3I6ICNmY2FjYWQ7XHJcbiAgZm9udC1zaXplOiAyMnB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG4ud2lzaF9fc2l6ZSB7XHJcbiAgZm9udC1mYW1pbHk6IGRpYW1vbmRGb250O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBjb2xvcjogI2ZjYWNhZDtcclxuICBmb250LXdlaWdodDogODAwO1xyXG4gIGZvbnQtc2l6ZTogMjRweDtcclxufVxyXG4ud2lzaF9fY29udHJvbHMge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuLndpc2hfX2NvbnRyb2xzIGRpdiB7XHJcbiAgbWFyZ2luLWxlZnQ6IDE1cHg7XHJcbn1cclxuLndpc2hfX2NvbnRyb2xzIGRpdjpmaXJzdC1jaGlsZCB7XHJcbiAgbWFyZ2luLWxlZnQ6IDA7XHJcbn1cclxuLndpc2hfX2NvbnRhaW5lcl9kYXJrIGgxIHtcclxuICBjb2xvcjogIzAwMDAwMDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xyXG59XHJcbi53aXNoX19jb250YWluZXJfZGFyayAud2lzaF9fdGl0bGUsIC53aXNoX19jb250YWluZXJfZGFyayAud2lzaF9fc2l6ZSB7XHJcbiAgY29sb3I6ICNmZmZmZmY7XHJcbn1cclxuIl19 */";
     /***/
   },
 
@@ -1808,16 +2198,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(WishComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          if (localStorage.getItem('nasty')) {
+            this.sizes.nasty = localStorage.getItem('nasty');
+          }
+
+          if (localStorage.getItem('oleg')) {
+            this.sizes.oleg = localStorage.getItem('oleg');
+          }
+        }
       }, {
         key: "plusSize",
         value: function plusSize(name) {
           this.sizes[name]++;
+          localStorage.setItem(name, this.sizes[name]);
         }
       }, {
         key: "minusSize",
         value: function minusSize(name) {
           this.sizes[name]--;
+          localStorage.setItem(name, this.sizes[name]);
         }
       }]);
 
